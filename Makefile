@@ -1,0 +1,71 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
+#    Updated: 2025/12/31 15:26:42 by ccastro          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME := cub3D
+
+CC := cc
+CFLAGS := -Wall -Wextra -Werror
+
+SRCS_DIR := srcs
+OBJS_DIR := objs
+
+LIBFT_DIR := libft-custom
+LIBFT := $(LIBFT_DIR)/libft.a
+
+UNAME := $(shell uname -s)
+
+ifeq ($(UNAME), Darwin)
+	MLX_DIR := minilibx_opengl_20191021
+	MLX_LIB := $(MLX_DIR)/libmlx.a
+	MLX_FLAGS := -L$(MLX_DIR) -lmlx -framework OpenGL -framework AppKit
+	CFLAGS += -I$(MLX_DIR)
+	CFLAGS += -Iincs -I$(LIBFT_DIR)/incs
+else
+	MLX_DIR := minilibx-linux
+	MLX_LIB := $(MLX_DIR)/libmlx_Linux.a
+	MLX_FLAGS := -L$(MLX_DIR) -lmlx_Linux -lX11 -lXext -lm
+	CFLAGS += -I$(MLX_DIR)
+	CFLAGS += -Iincs -I$(LIBFT_DIR)/incs
+endif
+
+SRCS := main.c
+SRCS := $(addprefix $(SRCS_DIR)/, $(SRCS))
+
+OBJS := $(patsubst $(SRCS_DIR)/%.c, $(OBJS_DIR)/%.o, $(SRCS))
+
+all: $(NAME)
+
+$(NAME): $(LIBFT) $(MLX_LIB) $(OBJS)
+	$(CC) $(OBJS) $(LIBFT) $(MLX_FLAGS) -o $(NAME)
+
+$(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c
+	mkdir -p $(OBJS_DIR)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(LIBFT):
+	$(MAKE) -C $(LIBFT_DIR)
+
+$(MLX_LIB):
+	$(MAKE) -C $(MLX_DIR)
+
+clean:
+	rm -rf $(OBJS_DIR)
+	$(MAKE) -C $(LIBFT_DIR) clean
+	$(MAKE) -C $(MLX_DIR) clean
+
+fclean: clean
+	rm -f $(NAME)
+	$(MAKE) -C $(LIBFT_DIR) fclean
+
+re: fclean all
+
+.PHONY: all clean fclean re
