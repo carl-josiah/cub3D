@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 10:25:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/02 10:30:48 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/02 12:45:55 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,10 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdio.h>
+# include <stddef.h>
 
-int	args_validation(int ac, char **av);
+# define DEBUG 1
+
+void				args_validation(int ac, char **av);
 
 #endif

@@ -6,16 +6,17 @@
 /*   By: carljosiah <carljosiah@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/23 14:22:36 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/02 10:52:59 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/02 11:57:15 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "parsing.h"
 #include <cub3d.h>
 
 int	main(int ac, char **av)
 {
 	(void)ac;
 	(void)av;
-	printf("%s\n", strerror(1));
+	args_validation(ac, av);
 	return (0);
 }
