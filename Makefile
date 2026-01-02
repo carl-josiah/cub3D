@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+         #
+#    By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
-#    Updated: 2025/12/31 15:34:40 by ccastro          ###   ########.fr        #
+#    Updated: 2026/01/02 17:12:14 by ccastro          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ endif
 
 CFLAGS      += -I$(MLX_DIR) -Iincs -I$(LIBFT_DIR)/incs
 
-FILES       := main.c
+FILES       := cub3d.c
 SRCS        := $(addprefix $(SRCS_DIR)/, $(FILES))
 OBJS        := $(patsubst $(SRCS_DIR)/%.c, $(OBJS_DIR)/%.o, $(SRCS))
 
