@@ -6,37 +6,42 @@
 #    By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
-#    Updated: 2026/01/02 17:12:14 by ccastro          ###   ########.fr        #
+#    Updated: 2026/01/02 17:20:16 by ccastro          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME        := cub3D
-CC          := cc
-CFLAGS      := -Wall -Wextra -Werror
+NAME					:= cub3D
+CC						:= cc
+CFLAGS					:= -Wall -Wextra -Werror
 
-SRCS_DIR    := srcs
-OBJS_DIR    := objs
+PARSING_DIR				:= parsing
+SRCS_DIR				:= srcs
+OBJS_DIR				:= objs
 
-LIBFT_DIR   := libft-custom
-LIBFT       := $(LIBFT_DIR)/libft.a
+LIBFT_DIR				:= libft-custom
+LIBFT					:= $(LIBFT_DIR)/libft.a
 
-UNAME       := $(shell uname -s)
+UNAME					:= $(shell uname -s)
 
 ifeq ($(UNAME), Darwin)
-    MLX_DIR   := minilibx_opengl_20191021
-    MLX_LIB   := $(MLX_DIR)/libmlx.a
-    MLX_FLAGS := -L$(MLX_DIR) -lmlx -framework OpenGL -framework AppKit
+    MLX_DIR				:= minilibx_opengl_20191021
+    MLX_LIB				:= $(MLX_DIR)/libmlx.a
+    MLX_FLAGS			:= -L$(MLX_DIR) -lmlx -framework OpenGL -framework AppKit
 else
-    MLX_DIR   := minilibx-linux
-    MLX_LIB   := $(MLX_DIR)/libmlx_Linux.a
-    MLX_FLAGS := -L$(MLX_DIR) -lmlx_Linux -lX11 -lXext -lm
+    MLX_DIR				:= minilibx-linux
+    MLX_LIB				:= $(MLX_DIR)/libmlx_Linux.a
+    MLX_FLAGS			:= -L$(MLX_DIR) -lmlx_Linux -lX11 -lXext -lm
 endif
 
-CFLAGS      += -I$(MLX_DIR) -Iincs -I$(LIBFT_DIR)/incs
+CFLAGS					+= -I$(MLX_DIR) -Iincs -I$(LIBFT_DIR)/incs
 
-FILES       := cub3d.c
-SRCS        := $(addprefix $(SRCS_DIR)/, $(FILES))
-OBJS        := $(patsubst $(SRCS_DIR)/%.c, $(OBJS_DIR)/%.o, $(SRCS))
+MAIN					:= cub3d.c 
+
+ALL_SRCS				:= $(MAIN) \
+						   # $(addprefix $(PARSING_DIR)/, $(PARSING_SRCS)) \
+
+SRCS					:= $(addprefix $(SRCS_DIR)/, $(ALL_SRCS))
+OBJS					:= $(patsubst $(SRCS_DIR)/%.c, $(OBJS_DIR)/%.o, $(SRCS))
 
 all: $(NAME)
 
@@ -44,7 +49,7 @@ $(NAME): $(LIBFT) $(MLX_LIB) $(OBJS)
 	$(CC) $(OBJS) $(LIBFT) $(MLX_FLAGS) -o $(NAME)
 
 $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c
-	@mkdir -p $(OBJS_DIR)
+	@mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(LIBFT):
