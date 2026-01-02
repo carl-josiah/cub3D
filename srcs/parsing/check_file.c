@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.h                                             :+:      :+:    :+:   */
+/*   check_file.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 14:23:39 by ccastro           #+#    #+#             */
-/*   Updated: 2025/12/31 12:37:12 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/02 10:24:54 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/02 10:31:26 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_H
-# define MAIN_H
+#include <parsing.h>
 
-# include <fcntl.h>
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <string.h>
-# include <sys/time.h>
-# include <math.h>
-# include <libft.h>
-
-#endif
+int	args_validation(int ac, char **av)
+{
+	(void)ac;
+	(void)av;
+	return (1);
+}
