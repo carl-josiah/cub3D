@@ -1,32 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.h                                            :+:      :+:    :+:   */
+/*   utils.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 14:23:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/02 19:20:39 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/02 19:18:15 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/02 19:22:03 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CUB3D_H
-# define CUB3D_H
+#ifndef UTILS_H
+# define UTILS_H
 
-# include <fcntl.h>
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <string.h>
-# include <sys/time.h>
-# include <math.h>
-
-# include <libft.h>
-# include <parsing.h>
-# include <errors.h>
-# include <utils.h>
 # include <structs.h>
 
-# define DEBUG 1
+void					init_data(t_data *data);
 
 #endif

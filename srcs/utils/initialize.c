@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.h                                            :+:      :+:    :+:   */
+/*   initialize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 14:23:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/02 19:20:39 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/02 19:10:30 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/02 19:19:25 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CUB3D_H
-# define CUB3D_H
+#include <utils.h>
 
-# include <fcntl.h>
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <string.h>
-# include <sys/time.h>
-# include <math.h>
+static void	init_tex(t_tex *tex)
+{
+	tex->no = NULL;
+	tex->so = NULL;
+	tex->ea = NULL;
+	tex->we = NULL;
+	tex->f_color = -1;
+	tex->c_color = -1;
+}
 
-# include <libft.h>
-# include <parsing.h>
-# include <errors.h>
-# include <utils.h>
-# include <structs.h>
+static void	init_map(t_map *map)
+{
+	map->w = 0;
+	map->h = 0;
+	map->grid = NULL;
+}
 
-# define DEBUG 1
-
-#endif
+void	init_data(t_data *data)
+{
+	init_tex(&data->tex);
+	init_map(&data->map);
+}

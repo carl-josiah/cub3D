@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 10:25:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/02 12:45:55 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/02 18:27:36 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@
 
 # define DEBUG 1
 
-void				args_validation(int ac, char **av);
+void					args_validation(int ac, char **av);
 
 #endif

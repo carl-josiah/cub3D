@@ -1,32 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.h                                            :+:      :+:    :+:   */
+/*   errors.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 14:23:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/02 19:20:39 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/02 18:25:28 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/02 18:58:46 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CUB3D_H
-# define CUB3D_H
-
-# include <fcntl.h>
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <string.h>
-# include <sys/time.h>
-# include <math.h>
+#ifndef ERRORS_H
+# define ERRORS_H
 
 # include <libft.h>
-# include <parsing.h>
-# include <errors.h>
-# include <utils.h>
-# include <structs.h>
 
-# define DEBUG 1
+void					exit_error(char *msg);
 
 #endif

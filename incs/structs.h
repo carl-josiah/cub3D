@@ -1,32 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.h                                            :+:      :+:    :+:   */
+/*   structs.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 14:23:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/02 19:20:39 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/02 18:44:10 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/03 11:10:19 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CUB3D_H
-# define CUB3D_H
+#ifndef STRUCTS_H
+# define STRUCTS_H
 
-# include <fcntl.h>
-# include <unistd.h>
-# include <stdio.h>
 # include <stdlib.h>
-# include <string.h>
-# include <sys/time.h>
-# include <math.h>
 
-# include <libft.h>
-# include <parsing.h>
-# include <errors.h>
-# include <utils.h>
-# include <structs.h>
+typedef struct s_tex
+{
+	char	*no;
+	char	*so;
+	char	*ea;
+	char	*we;
+	int		f_color;
+	int		c_color;
+}			t_tex;
 
-# define DEBUG 1
+typedef struct s_map
+{
+	char	**grid;
+	int		h;
+	int		w;
+}			t_map;
+
+typedef struct s_data
+{
+	t_tex	tex;
+	t_map	map;
+	// t_player
+	// t_mlx
+}			t_data;
 
 #endif
