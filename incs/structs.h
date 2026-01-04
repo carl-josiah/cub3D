@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:44:10 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/03 11:10:19 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/03 19:31:04 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,23 +21,31 @@ typedef struct s_tex
 	char	*so;
 	char	*ea;
 	char	*we;
-	int		f_color;
-	int		c_color;
+	int		floor_color;
+	int		ceiling_color;
+	int		count;
 }			t_tex;
 
 typedef struct s_map
 {
 	char	**grid;
-	int		h;
-	int		w;
+	int		height;
+	int		width;
 }			t_map;
+
+typedef struct s_player
+{
+	int		x;
+	int		y;
+	char	dir;
+}			t_player;
 
 typedef struct s_data
 {
-	t_tex	tex;
-	t_map	map;
-	// t_player
+	t_tex		tex;
+	t_map		map;
+	t_player	player;
 	// t_mlx
-}			t_data;
+}				t_data;
 
 #endif

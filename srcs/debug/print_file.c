@@ -1,20 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   error_msg.c                                        :+:      :+:    :+:   */
+/*   print_file.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/02 18:25:08 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/04 16:11:44 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/04 16:07:39 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/04 16:51:24 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <errors.h>
+#include <debug.h>
 
-void	exit_error(char *msg)
+int	print_for_me(const char *path)
 {
-	ft_putstr_fd(msg, STDERR_FILENO);
-	ft_putstr_fd("\n", STDERR_FILENO);
-	exit(2);
+	int		fd;
+	char	*line;
+
+	fd = open(path, O_RDONLY);
+	if (fd == -1)
+	{
+		perror("Error opening file");
+		return (1);
+	}
+	while ((line = get_next_line(fd)))
+	{
+		printf("%s", line);
+		free(line);
+	}
+	close(fd);
+	return (0);
 }

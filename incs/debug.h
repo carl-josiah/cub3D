@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   error_msg.c                                        :+:      :+:    :+:   */
+/*   debug.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/02 18:25:08 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/04 16:11:44 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/04 16:05:31 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/04 16:51:06 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <errors.h>
+#ifndef DEBUG_H
+# define DEBUG_H
 
-void	exit_error(char *msg)
-{
-	ft_putstr_fd(msg, STDERR_FILENO);
-	ft_putstr_fd("\n", STDERR_FILENO);
-	exit(2);
-}
+# include <libft.h>
+
+int						print_for_me(const char *path);
+
+#endif
