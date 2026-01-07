@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.h                                            :+:      :+:    :+:   */
+/*   enums.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 14:23:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/08 00:55:06 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/04 17:20:02 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/07 22:09:55 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CUB3D_H
-# define CUB3D_H
+#ifndef ENUMS_H
+# define ENUMS_H
 
-# include <fcntl.h>
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <string.h>
-# include <sys/time.h>
-# include <math.h>
-# include <mlx.h>
+typedef enum e_tex_mask
+{
+	TEX_NO = 1 << 0,
+	TEX_SO = 1 << 1,
+	TEX_EA = 1 << 2,
+	TEX_WE = 1 << 3,
+	TEX_F = 1 << 4,
+	TEX_C = 1 << 5,
+	TEX_ALL = TEX_NO | TEX_SO | TEX_EA | TEX_WE | TEX_F | TEX_C
+}	t_tex_mask;
 
-# include <debug.h>
-
-# include <libft.h>
-# include <parsing.h>
-# include <cleanup.h>
-# include <utils.h>
-# include <structs.h>
-# include <defines.h>
+typedef enum e_state
+{
+	STATE_CONFIG,
+	STATE_MAP
+}	t_state;
 
 #endif

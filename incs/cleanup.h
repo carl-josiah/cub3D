@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   error_msg.c                                        :+:      :+:    :+:   */
+/*   cleanup.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/02 18:25:08 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/04 16:11:44 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/02 18:25:28 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/08 01:04:41 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <errors.h>
+#ifndef CLEANUP_H
+# define CLEANUP_H
 
-void	exit_error(char *msg)
-{
-	ft_putstr_fd(msg, STDERR_FILENO);
-	ft_putstr_fd("\n", STDERR_FILENO);
-	exit(2);
-}
+# include <libft.h>
+
+void					exit_error(char *msg, void **ptr);
+
+#endif

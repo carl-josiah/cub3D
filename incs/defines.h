@@ -1,34 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.h                                            :+:      :+:    :+:   */
+/*   defines.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 14:23:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/08 00:55:06 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/04 17:46:29 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/07 15:07:06 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CUB3D_H
-# define CUB3D_H
+#ifndef DEFINES_H
+# define DEFINES_H
 
-# include <fcntl.h>
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <string.h>
-# include <sys/time.h>
-# include <math.h>
-# include <mlx.h>
-
-# include <debug.h>
-
-# include <libft.h>
-# include <parsing.h>
-# include <cleanup.h>
-# include <utils.h>
-# include <structs.h>
-# include <defines.h>
+# define DEBUG_MAIN 1
+# define DEBUG_PARSE 2
+# define ERROR "Usage: ./cub3D [file_name].cub"
 
 #endif

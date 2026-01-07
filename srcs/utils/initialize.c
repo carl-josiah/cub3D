@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 19:10:30 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/03 19:37:59 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/08 00:26:15 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ static void	init_tex(t_tex *tex)
 	tex->we = NULL;
 	tex->floor_color = -1;
 	tex->ceiling_color = -1;
+	tex->mask = 0;
 }
 
 static void	init_map(t_map *map)

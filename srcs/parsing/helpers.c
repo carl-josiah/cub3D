@@ -1,20 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   errors.h                                           :+:      :+:    :+:   */
+/*   helpers.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/02 18:25:28 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/02 18:58:46 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/07 14:33:12 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/07 15:14:05 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ERRORS_H
-# define ERRORS_H
+#include <parsing.h>
 
-# include <libft.h>
+int	is_empty(char *line)
+{
+	while (*line)
+	{
+		if (!ft_isspace(*line))
+			return (0);
+		line++;
+	}
+	return (1);
+}
 
-void					exit_error(char *msg);
-
-#endif
+int	is_texture_line(char *line)
+{
+	return (!ft_strncmp(line, "NO ", 3)
+		|| !ft_strncmp(line, "SO ", 3)
+		|| !ft_strncmp(line, "EA ", 3)
+		|| !ft_strncmp(line, "WE ", 3));
+}

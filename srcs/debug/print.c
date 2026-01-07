@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_file.c                                       :+:      :+:    :+:   */
+/*   print.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 16:07:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/04 16:51:24 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/07 15:16:00 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,12 @@ int	print_for_me(const char *path)
 		perror("Error opening file");
 		return (1);
 	}
-	while ((line = get_next_line(fd)))
+	line = get_next_line(fd);
+	while (line)
 	{
 		printf("%s", line);
 		free(line);
+		line = get_next_line(fd);
 	}
 	close(fd);
 	return (0);

@@ -6,7 +6,7 @@
 #    By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
-#    Updated: 2026/01/04 16:07:31 by ccastro          ###   ########.fr        #
+#    Updated: 2026/01/08 00:54:47 by ccastro          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRCS_DIR				:= srcs
 OBJS_DIR				:= objs
 
 PARSING_DIR				:= parsing
-ERRORS_DIR				:= errors
+ERRORS_DIR				:= cleanup
 UTILS_DIR				:= utils
 DEBUG_DIR				:= debug
 
@@ -40,10 +40,10 @@ endif
 CFLAGS					+= -I$(MLX_DIR) -Iincs -I$(LIBFT_DIR)/incs
 
 MAIN					:= cub3d.c
-PARSING_SRCS			:= validate.c
-ERRORS_SRCS				:= error_msg.c
+PARSING_SRCS			:= validate.c texture.c helpers.c map.c
+ERRORS_SRCS				:= errors.c
 UTILS_SRCS				:= initialize.c
-DEBUG_SRCS				:= print_file.c
+DEBUG_SRCS				:= print.c
 
 ALL_SRCS				:= $(MAIN) \
 						   $(addprefix $(PARSING_DIR)/, $(PARSING_SRCS)) \

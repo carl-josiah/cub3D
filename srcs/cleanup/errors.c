@@ -1,34 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.h                                            :+:      :+:    :+:   */
+/*   errors.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 14:23:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/08 00:55:06 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/02 18:25:08 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/08 01:04:25 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CUB3D_H
-# define CUB3D_H
+#include <cleanup.h>
 
-# include <fcntl.h>
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <string.h>
-# include <sys/time.h>
-# include <math.h>
-# include <mlx.h>
-
-# include <debug.h>
-
-# include <libft.h>
-# include <parsing.h>
-# include <cleanup.h>
-# include <utils.h>
-# include <structs.h>
-# include <defines.h>
-
-#endif
+void	exit_error(char *msg, void **ptr) 
+{
+	if (ptr && *ptr)
+		ft_free_ptr(ptr);
+	ft_putstr_fd(msg, STDERR_FILENO);
+	ft_putstr_fd("\n", STDERR_FILENO);
+	exit(1);
+}
