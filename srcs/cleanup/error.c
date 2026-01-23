@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   errors.c                                           :+:      :+:    :+:   */
+/*   error.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:25:08 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/08 01:04:25 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/23 15:28:28 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <cleanup.h>
 
-void	exit_error(char *msg, void **ptr) 
+void	exit_error(char *msg, void **ptr)
 {
 	if (ptr && *ptr)
 		ft_free_ptr(ptr);

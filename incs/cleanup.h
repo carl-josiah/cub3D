@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:25:28 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/08 01:04:41 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/23 14:04:32 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,6 @@
 # include <libft.h>
 
 void					exit_error(char *msg, void **ptr);
+void					free_double_ptr(char **ptr);
 
 #endif

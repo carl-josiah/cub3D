@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 10:25:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/08 00:35:42 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/23 12:21:02 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,6 @@
 void					args_validation(int ac, char **av);
 void					parse_texture(char *line, t_tex *tex);
 int						is_empty(char *line);
-void					store_map_line(t_map *map, char *line);
+char					**read_cub_file(const char *cub_file);
 
 #endif

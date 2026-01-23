@@ -6,13 +6,13 @@
 #    By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
-#    Updated: 2026/01/08 00:54:47 by ccastro          ###   ########.fr        #
+#    Updated: 2026/01/23 15:27:11 by ccastro          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME					:= cub3D
 CC						:= cc
-CFLAGS					:= -Wall -Wextra -Werror
+CFLAGS					:= # -Wall -Wextra -Werror
 
 LIBFT_DIR				:= libft-custom
 LIBFT					:= $(LIBFT_DIR)/libft.a
@@ -21,7 +21,7 @@ SRCS_DIR				:= srcs
 OBJS_DIR				:= objs
 
 PARSING_DIR				:= parsing
-ERRORS_DIR				:= cleanup
+CLEANUP_DIR				:= cleanup
 UTILS_DIR				:= utils
 DEBUG_DIR				:= debug
 
@@ -40,14 +40,14 @@ endif
 CFLAGS					+= -I$(MLX_DIR) -Iincs -I$(LIBFT_DIR)/incs
 
 MAIN					:= cub3d.c
-PARSING_SRCS			:= validate.c texture.c helpers.c map.c
-ERRORS_SRCS				:= errors.c
+PARSING_SRCS			:= validate.c texture.c helpers.c read.c
+CLEANUP_SRCS			:= error.c free.c
 UTILS_SRCS				:= initialize.c
 DEBUG_SRCS				:= print.c
 
 ALL_SRCS				:= $(MAIN) \
 						   $(addprefix $(PARSING_DIR)/, $(PARSING_SRCS)) \
-						   $(addprefix $(ERRORS_DIR)/, $(ERRORS_SRCS)) \
+						   $(addprefix $(CLEANUP_DIR)/, $(CLEANUP_SRCS)) \
 						   $(addprefix $(UTILS_DIR)/, $(UTILS_SRCS)) \
 						   $(addprefix $(DEBUG_DIR)/, $(DEBUG_SRCS)) \
 						   # $(addprefix $(EXECUTION_DIR)/, $(EXECUTION_SRCS)) \

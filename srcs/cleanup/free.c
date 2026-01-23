@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.c                                            :+:      :+:    :+:   */
+/*   free.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: carljosiah <carljosiah@student.42.fr>      +#+  +:+       +#+        */
+/*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 14:22:36 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/23 15:27:33 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/23 13:37:11 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/23 13:58:34 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <cub3d.h>
+#include <cleanup.h>
 
-int	main(int ac, char **av)
+void	free_double_ptr(char **ptr)
 {
-	char	**lines;
-	t_data	data;
+	size_t	i;
 
-	args_validation(ac, av);
-	init_data(&data);
-	lines = read_cub_file(av[1]);
-	if (!lines)
-		return (EXIT_FAILURE);
-	free_double_ptr(lines);
-	return (EXIT_SUCCESS);
+	i = 0;
+	if (!ptr)
+		return ;
+	while (ptr[i])
+	{
+		free(ptr[i]);
+		i++;
+	}
+	free(ptr);
 }
