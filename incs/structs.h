@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:44:10 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/04 17:35:06 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/25 19:08:35 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ typedef struct s_tex
 	char		*so;
 	char		*ea;
 	char		*we;
-	int			floor_color;
-	int			ceiling_color;
+	int			f;
+	int			c;
 	t_tex_mask	mask;
 }				t_tex;
 

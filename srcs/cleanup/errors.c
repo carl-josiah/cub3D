@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   defines.h                                          :+:      :+:    :+:   */
+/*   errors.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/04 17:46:29 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/26 15:46:41 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/02 18:25:08 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/23 16:06:21 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DEFINES_H
-# define DEFINES_H
+#include <cleanup.h>
 
-# define DEBUG_MAIN 1
-# define DEBUG_PARSE 2
-# define ERROR "Usage: ./cub3D [file_name].cub"
-# define MALLOC "Malloc Error"
-# define SPACES " \t\n\v\f\r"
-# define DUPLICATE "Error: Duplicate Textures"
-# define INVALID "Error: Invalid Textures"
-
-#endif
+void	exit_error(char *msg, void **ptr) 
+{
+	if (ptr && *ptr)
+		ft_free_ptr(ptr);
+	ft_putstr_fd(msg, STDERR_FILENO);
+	ft_putstr_fd("\n", STDERR_FILENO);
+	exit(1);
+}

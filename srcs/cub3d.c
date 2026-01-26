@@ -6,7 +6,7 @@
 /*   By: carljosiah <carljosiah@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/23 14:22:36 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/23 15:27:33 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/26 15:28:02 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,15 @@
 
 int	main(int ac, char **av)
 {
-	char	**lines;
 	t_data	data;
+	char	**lines;
 
 	args_validation(ac, av);
 	init_data(&data);
 	lines = read_cub_file(av[1]);
 	if (!lines)
-		return (EXIT_FAILURE);
+		exit_error(MALLOC, NULL);
+	parse_file(lines, &data);
 	free_double_ptr(lines);
 	return (EXIT_SUCCESS);
 }
