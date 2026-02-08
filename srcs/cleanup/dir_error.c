@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cleanup.h                                          :+:      :+:    :+:   */
+/*   throw_direction_error.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/02 18:25:28 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/31 10:14:21 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/29 13:17:15 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/31 10:11:04 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CLEANUP_H
-# define CLEANUP_H
+#include <cleanup.h>
 
-# include <libft.h>
-# include <structs.h>
-# include <defines.h>
-
-void					exit_error(char *msg, char *specific, int newline);
-void					throw_id_error(int id, t_tex *tex);
-void					throw_direction_error(t_tex_mask id);
-void					throw_color_error(t_tex_mask mask);
-void					free_double_ptr(char **ptr);
-
-#endif
+void	throw_direction_error(t_tex_mask mask)
+{
+	if (!(mask & TEX_NO))
+		exit_error(MISSING_NO, NULL, NL);
+	if (!(mask & TEX_SO))
+		exit_error(MISSING_SO, NULL, NL);
+	if (!(mask & TEX_EA))
+		exit_error(MISSING_EA, NULL, NL);
+	if (!(mask & TEX_WE))
+		exit_error(MISSING_WE, NULL, NL);
+}

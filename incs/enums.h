@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:20:02 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/26 15:53:40 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/30 19:38:19 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,8 @@ typedef enum e_tex_status
 	TEX_VALID = 1,
 	TEX_INVALID = 2,
 	TEX_DUPLICATE = 3,
-	TEX_MAP = 4
+	TEX_MAP = 4,
+	TEX_SPACES = 5
 }	t_tex_status;
 
 #endif

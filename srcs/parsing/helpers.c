@@ -6,54 +6,55 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 14:33:12 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/26 17:34:06 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/01 15:58:07 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <parsing.h>
 
-static int	is_map_char(char c)
+int	rgb_to_int(int r, int g, int b)
 {
-	return (ft_strchr("01NSEW"SPACES, c) != NULL);
+	return ((r << 16) | (g << 8) | (b));
 }
 
-int	is_empty(char *line)
+t_tex_status	is_texture(int *id, char *line, t_tex *tex)
 {
-	while (*line)
+	*id = 0;
+	if (!ft_strncmp(line, "NO", 2) && ft_isspace(line[2]))
+		*id = TEX_NO;
+	else if (!ft_strncmp(line, "SO", 2) && ft_isspace(line[2]))
+		*id = TEX_SO;
+	else if (!ft_strncmp(line, "EA", 2) && ft_isspace(line[2]))
+		*id = TEX_EA;
+	else if (!ft_strncmp(line, "WE", 2) && ft_isspace(line[2]))
+		*id = TEX_WE;
+	else if (!ft_strncmp(line, "F", 1) && ft_isspace(line[1]))
+		*id = TEX_F;
+	else if (!ft_strncmp(line, "C", 1) && ft_isspace(line[1]))
+		*id = TEX_C;
+	if (*id)
 	{
-		if (!ft_isspace(*line))
-			return (0);
-		line++;
+		if (*id & tex->mask)
+			return (TEX_DUPLICATE);
 	}
-	return (1);
-}
-
-int	is_map_line(char *line)
-{
-	while (*line)
-	{
-		if (!is_map_char(*line))
-			return (0);
-		line++;
-	}
-	return (1);
+	else if (ft_is_empty(line))
+		return (TEX_SPACES);
+	else if (ft_is_included(line, MAP))
+		return (TEX_MAP);
+	else if (!*id)
+		return (TEX_INVALID);
+	return (TEX_VALID);
 }
 
 void	skip_white_spaces(char **line, int skip) 
 {
-	line += skip;
-	while (**line && ft_isspace(**line))
-		(*line)++;
-}
-
-void	throw_id_error(int id, t_tex *tex)
-{
-	if (id == -1)
-		exit_error("Invalid texture identifier", NULL);
-	else if (id == 0)
+	if (!line || !*line)
 		return ;
-	else if (id & tex->mask && id & TEX_DIR)
-		exit_error("Duplicate texture identifier", NULL);
-	else if (id & tex->mask && id & TEX_COLOR)
-		exit_error("Duplicate color identifier", NULL);
+	while (skip > 0 && **line)
+	{
+		(*line)++;
+		skip--;
+	}
+	while (**line && ft_strchr(SPACES, **line))
+		(*line)++;
 }

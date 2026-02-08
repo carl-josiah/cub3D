@@ -6,83 +6,88 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:53:40 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/26 17:45:00 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/01 22:42:39 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <parsing.h>
-#include <string.h>
 
-static int
-	ft_char_in_set(char c, char const *set)
+static void	validate_line_argc(char *line)
 {
-	size_t	i;
+	size_t	count;
 
-	i = 0;
-	while (set[i])
-	{
-		if (set[i] == c)
-			return (1);
-		i++;
-	}
-	return (0);
-}
-
-static char
-	*f_strtrim(char const *s1, char const *set)
-{
-	char	*str;
-	size_t	i;
-	size_t	start;
-	size_t	end;
-
-	start = 0;
-	while (s1[start] && ft_char_in_set(s1[start], set))
-		start++;
-	end = ft_strlen(s1);
-	while (end > start && ft_char_in_set(s1[end - 1], set))
-		end--;
-	str = (char*)malloc(sizeof(*s1) * (end - start + 1));
-	if (!str)
-		return (NULL);
-	i = 0;
-	while (start < end)
-		str[i++] = s1[start++];
-	str[i] = 0;
-	return (str);
+	count = ft_count_words(line, SPACES);
+	if (count <= 1)
+		exit_error(NO_TEXTURE, line, NO_NL);
+	if (count > 2)
+		exit_error(INVALID_TEXTURE, line, NO_NL);
 }
 
 void	parse_direction(int id, char *line, t_tex *tex)
 {
 	char	*texture;
 
+	validate_line_argc(line);
 	skip_white_spaces(&line, 2);
-	texture = f_strtrim(line, SPACES);
-	// if (!texture)
-	// 	exit_error(MALLOC, NULL);
-	// if (id == TEX_NO)
-	// 	tex->no = texture;
-	// else if (id == TEX_SO)
-	// 	tex->so = texture;
-	// else if (id == TEX_EA)
-	// 	tex->ea = texture;
-	// else if (id == TEX_WE)
-	// 	tex->we = texture;
-	// else if (id == TEX_F || id == TEX_C)
-	// 	return ;
-	// tex->mask |= id;
+	texture = ft_strtrim(line, SPACES);
+	if (!texture)
+		exit_error(MALLOC, NULL, NL);
+	if (id == TEX_NO)
+		tex->no = texture;
+	else if (id == TEX_SO)
+		tex->so = texture;
+	else if (id == TEX_EA)
+		tex->ea = texture;
+	else if (id == TEX_WE)
+		tex->we = texture;
+	tex->mask |= id;
+}
+
+static int	error_check(char *ptr, int *rgb, int i)
+{
+	if (!ft_isdigit(*ptr))
+		return (0);
+	if (!ft_atoi_safe(ptr, &rgb[i]))
+		return (0);
+	if (rgb[i] < 0 || rgb[i] > 255)
+		return (0);
+	return (1);
+}
+
+static void	extract_color(char *line, int *rgb)
+{
+	size_t	i;
+	char	*ptr;
+
+	i = 0;
+	ptr = line;
+	skip_white_spaces(&ptr, 1);
+	while (i < 3)
+	{
+		if (!error_check(ptr, rgb, i))
+			exit_error(INVALID_COLOR, line, NO_NL);
+		ptr += ft_strcspn(ptr, ",");
+		// printf("amount: %zu\n", num);
+		if (i < 2)
+		{
+			if (*ptr!= ',')
+				exit_error(INVALID_COLOR, line, NO_NL);
+			ptr++;
+		}
+		i++;
+	}
+	if (!ft_isspace(*ptr))
+		exit_error(INVALID_COLOR, line, NO_NL);
 }
 
 void	parse_color(int id, char *line, t_tex *tex)
 {
-	// char	*texture;
-	//
-	// skip_white_spaces(&line, 1);
-	// texture = ft_strtrim(line, SPACES);
-	// if (!texture)
-	// 	exit_error(MALLOC, NULL);
-	// if (id == TEX_F)
-	// 	tex->f = texture;
-	// else if (id == TEX_C)
-	// 	tex->c = 
+	int		rgb[3];
+
+	extract_color(line, rgb);
+	if (id == TEX_F)
+		tex->f = rgb_to_int(rgb[0], rgb[1], rgb[2]);
+	else if (id == TEX_C)
+		tex->c = rgb_to_int(rgb[0], rgb[1], rgb[2]);
+	tex->mask |= id;
 }

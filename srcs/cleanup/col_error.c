@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cleanup.h                                          :+:      :+:    :+:   */
+/*   throw_color_error.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/02 18:25:28 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/31 10:14:21 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/31 10:11:24 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/31 10:12:45 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CLEANUP_H
-# define CLEANUP_H
+#include <cleanup.h>
 
-# include <libft.h>
-# include <structs.h>
-# include <defines.h>
-
-void					exit_error(char *msg, char *specific, int newline);
-void					throw_id_error(int id, t_tex *tex);
-void					throw_direction_error(t_tex_mask id);
-void					throw_color_error(t_tex_mask mask);
-void					free_double_ptr(char **ptr);
-
-#endif
+void	throw_color_error(t_tex_mask mask)
+{
+	if (!(mask & TEX_F))
+		exit_error(MISSING_F, NULL, NL);
+	if (!(mask & TEX_C))
+		exit_error(MISSING_C, NULL, NL);
+}

@@ -6,7 +6,7 @@
 #    By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
-#    Updated: 2026/01/26 16:14:31 by ccastro          ###   ########.fr        #
+#    Updated: 2026/01/31 10:16:09 by ccastro          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,7 @@ CFLAGS					+= -I$(MLX_DIR) -Iincs -I$(LIBFT_DIR)/incs
 
 MAIN					:= cub3d.c
 PARSING_SRCS			:= validate.c texture.c helpers.c read.c parse.c
-CLEANUP_SRCS			:= error.c free.c
+CLEANUP_SRCS			:= exit_error.c free.c id_error.c dir_error.c col_error.c
 UTILS_SRCS				:= initialize.c
 DEBUG_SRCS				:= print.c
 
@@ -61,7 +61,7 @@ $(NAME): $(LIBFT) $(MLX_LIB) $(OBJS)
 	$(CC) $(OBJS) $(LIBFT) $(MLX_FLAGS) -o $(NAME)
 
 $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c
-	@mkdir -p $(dir $@)
+	mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(LIBFT):
