@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:25:28 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/31 10:14:21 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/10 16:41:13 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@
 # include <structs.h>
 # include <defines.h>
 
-void					exit_error(char *msg, char *specific, int newline);
-void					throw_id_error(int id, t_tex *tex);
-void					throw_direction_error(t_tex_mask id);
-void					throw_color_error(t_tex_mask mask);
+void					exit_error(t_data *data, char *msg, char *line, int nl);
 void					free_double_ptr(char **ptr);
+void					free_textures(t_tex *tex);
+void					throw_color_error(t_data *data);
+void					throw_direction_error(t_data *data);
 
 #endif

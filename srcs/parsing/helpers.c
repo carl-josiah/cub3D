@@ -6,11 +6,23 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 14:33:12 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/01 15:58:07 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/10 16:35:34 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <parsing.h>
+
+void	forbid_garbage(char *ptr, char *line)
+{
+	if (!ft_isdigit(*ptr))
+		exit_error(NULL, INVALID_COLOR, line, NO_NL);
+	while (ft_isdigit(*ptr))
+		ptr++;
+	while (ft_isspace(*ptr))
+		ptr++;
+	if (!*ptr)
+		exit_error(NULL, INVALID_COLOR, line, NO_NL);
+}
 
 int	rgb_to_int(int r, int g, int b)
 {
@@ -46,7 +58,7 @@ t_tex_status	is_texture(int *id, char *line, t_tex *tex)
 	return (TEX_VALID);
 }
 
-void	skip_white_spaces(char **line, int skip) 
+void	skip_white_spaces(char **line, int skip)
 {
 	if (!line || !*line)
 		return ;

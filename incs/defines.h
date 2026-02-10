@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:46:29 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/01 16:15:06 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/10 16:36:43 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@
 # define INVALID_TEXTURE "Invalid Texture"
 # define INVALID_IDENTIFIER "Invalid Identifier"
 # define NO_TEXTURE "No Path Indicated"
-# define INCOMPLETE_TEXTURE "Incomplete Configuration\n\nAdd Directions:\nNO [path]\nSO [path]\nEA [path]\nWE [path]\n\nAdd Colors:\nF [000,000,000]\nC [000,000,000]"
+# define INCOMPLETE_TEXTURE "Incomplete Configuration\nAdd Direction and Color"
 # define INVALID_COLOR "Invalid Color Format"
 
 # define NO_NL 0

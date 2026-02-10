@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:53:40 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/01 22:42:39 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/10 16:35:19 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,36 +18,33 @@ static void	validate_line_argc(char *line)
 
 	count = ft_count_words(line, SPACES);
 	if (count <= 1)
-		exit_error(NO_TEXTURE, line, NO_NL);
+		exit_error(NULL, NO_TEXTURE, line, NO_NL);
 	if (count > 2)
-		exit_error(INVALID_TEXTURE, line, NO_NL);
-}
-
-void	parse_direction(int id, char *line, t_tex *tex)
-{
-	char	*texture;
-
-	validate_line_argc(line);
-	skip_white_spaces(&line, 2);
-	texture = ft_strtrim(line, SPACES);
-	if (!texture)
-		exit_error(MALLOC, NULL, NL);
-	if (id == TEX_NO)
-		tex->no = texture;
-	else if (id == TEX_SO)
-		tex->so = texture;
-	else if (id == TEX_EA)
-		tex->ea = texture;
-	else if (id == TEX_WE)
-		tex->we = texture;
-	tex->mask |= id;
+		exit_error(NULL, INVALID_TEXTURE, line, NO_NL);
 }
 
 static int	error_check(char *ptr, int *rgb, int i)
 {
+	char	*start;
+
+	start = ptr;
 	if (!ft_isdigit(*ptr))
 		return (0);
-	if (!ft_atoi_safe(ptr, &rgb[i]))
+	while (ft_isdigit(*ptr))
+		ptr++;
+	if (i < 2)
+	{
+		if (*ptr && *ptr != ',')
+			return (0);
+	}
+	else if (i == 2)
+	{
+		while (ft_isspace(*ptr))
+			ptr++;
+		if (*ptr && !ft_isspace(*ptr))
+			return (0);
+	}
+	if (!ft_atoi_safe(start, &rgb[i]))
 		return (0);
 	if (rgb[i] < 0 || rgb[i] > 255)
 		return (0);
@@ -65,19 +62,38 @@ static void	extract_color(char *line, int *rgb)
 	while (i < 3)
 	{
 		if (!error_check(ptr, rgb, i))
-			exit_error(INVALID_COLOR, line, NO_NL);
+			exit_error(NULL, INVALID_COLOR, line, NO_NL);
 		ptr += ft_strcspn(ptr, ",");
-		// printf("amount: %zu\n", num);
 		if (i < 2)
 		{
-			if (*ptr!= ',')
-				exit_error(INVALID_COLOR, line, NO_NL);
+			if (*ptr && *ptr != ',')
+				exit_error(NULL, INVALID_COLOR, line, NO_NL);
 			ptr++;
 		}
 		i++;
 	}
-	if (!ft_isspace(*ptr))
-		exit_error(INVALID_COLOR, line, NO_NL);
+	if (*ptr && !ft_isspace(*ptr))
+		exit_error(NULL, INVALID_COLOR, line, NO_NL);
+}
+
+void	parse_direction(int id, char *line, t_tex *tex)
+{
+	char	*texture;
+
+	validate_line_argc(line);
+	skip_white_spaces(&line, 2);
+	texture = ft_strtrim(line, SPACES);
+	if (!texture)
+		exit_error(NULL, MALLOC, NULL, NL);
+	if (id == TEX_NO)
+		tex->no = texture;
+	else if (id == TEX_SO)
+		tex->so = texture;
+	else if (id == TEX_EA)
+		tex->ea = texture;
+	else if (id == TEX_WE)
+		tex->we = texture;
+	tex->mask |= id;
 }
 
 void	parse_color(int id, char *line, t_tex *tex)

@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   throw_color_error.c                                :+:      :+:    :+:   */
+/*   col_error.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/31 10:11:24 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/31 10:12:45 by ccastro          ###   ########.fr       */
+/*   Created: 2026/02/08 19:01:37 by ccastro           #+#    #+#             */
+/*   Updated: 2026/02/10 16:32:43 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <cleanup.h>
 
-void	throw_color_error(t_tex_mask mask)
+void	throw_color_error(t_data *data)
 {
-	if (!(mask & TEX_F))
-		exit_error(MISSING_F, NULL, NL);
-	if (!(mask & TEX_C))
-		exit_error(MISSING_C, NULL, NL);
+	if ((data->tex.mask & TEX_F) & TEX_F)
+		exit_error(data, MISSING_F, NULL, NL);
+	if ((data->tex.mask & TEX_C) & TEX_C)
+		exit_error(data, MISSING_C, NULL, NL);
 }
