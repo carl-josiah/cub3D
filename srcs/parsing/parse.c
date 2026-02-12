@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 15:32:33 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/10 16:31:38 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/12 11:48:14 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static void	handle_config(char *line, t_data *data, int *id, t_state *state)
 
 static void	handle_map(char *line, t_data *data)
 {
-	printf("hahaha\n");
+	return ;
 }
 
 static void	handle_line(char *line, t_data *data, t_state *state)
