@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 15:32:33 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/12 11:48:14 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/15 18:58:17 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static void	handle_config(char *line, t_data *data, int *id, t_state *state)
 
 	*id = 0;
 	skip_white_spaces(&line, 0);
-	status = is_texture(id, line, &data->tex);
+	status = is_texture(id, line, &data->tex, state);
 	if (status == TEX_VALID)
 	{
 		if (*id & TEX_DIR)
@@ -47,19 +47,26 @@ static void	handle_line(char *line, t_data *data, t_state *state)
 
 	if (*state == STATE_CONFIG)
 		handle_config(line, data, &id, state);
-	if (*state == STATE_MAP)
-		handle_map(line, data);
+	// if (*state == STATE_MAP)
+	// 	handle_map(line, data);
 }
 
 void	parse_file(char **lines, t_data *data)
 {
 	t_state	state;
+	int		flag;
 
 	state = STATE_CONFIG;
+	flag = 0;
 	if (!*lines)
 		exit_error(NULL, EMPTY_FILE, NULL, NL);
 	while (*lines)
 	{
+		if (state == STATE_MAP && flag == 0)
+		{
+			count_map_height(lines);
+			flag = 1;
+		}
 		handle_line(*lines, data, &state);
 		lines++;
 	}
@@ -67,4 +74,5 @@ void	parse_file(char **lines, t_data *data)
 		throw_direction_error(data);
 	if ((data->tex.mask & TEX_COLOR) != TEX_COLOR)
 		throw_color_error(data);
+	// print_grid((const char **)data->map.grid, data->map.height);
 }

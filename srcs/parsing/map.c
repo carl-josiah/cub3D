@@ -1,47 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print.c                                            :+:      :+:    :+:   */
+/*   map.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/04 16:07:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/15 13:51:57 by ccastro          ###   ########.fr       */
+/*   Created: 2026/02/12 11:53:10 by ccastro           #+#    #+#             */
+/*   Updated: 2026/02/15 18:55:48 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <debug.h>
+#include <parsing.h>
 
-int	print_for_me(const char *path)
-{
-	int		fd;
-	char	*line;
-
-	fd = open(path, O_RDONLY);
-	if (fd == -1)
-	{
-		perror("Error opening file");
-		return (1);
-	}
-	line = get_next_line(fd);
-	while (line)
-	{
-		printf("%s", line);
-		free(line);
-		line = get_next_line(fd);
-	}
-	close(fd);
-	return (0);
-}
-
-void	print_grid(const char **grid, int height)
+int	count_map_height(char **line)
 {
 	int	i;
 
 	i = 0;
-	while (i < height)
+	while (line[i])
 	{
-		printf("%s", grid[i]);
 		i++;
 	}
+	printf("%d\n", i);
+	return (i);
+}
+
+int	consume_map_line(char **line, t_data *data)
+{
+	if (!line || !*line)
+		return (0);
+	return (1);
 }

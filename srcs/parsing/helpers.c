@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 14:33:12 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/10 16:35:34 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/15 19:01:12 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,23 @@ int	rgb_to_int(int r, int g, int b)
 	return ((r << 16) | (g << 8) | (b));
 }
 
-t_tex_status	is_texture(int *id, char *line, t_tex *tex)
+static t_tex_status	acquire_tex(int id, char *line, t_tex *tex)
+{
+	if (id)
+	{
+		if (id & tex->mask)
+			return (TEX_DUPLICATE);
+	}
+	if (ft_is_empty(line))
+		return (TEX_SPACES);
+	if (ft_str_is_charset(line, MAP_CHARS))
+		return (TEX_MAP);
+	if (!id)
+		return (TEX_INVALID);
+	return (TEX_VALID);
+}
+
+t_tex_status	is_texture(int *id, char *line, t_tex *tex, t_state *state)
 {
 	*id = 0;
 	if (!ft_strncmp(line, "NO", 2) && ft_isspace(line[2]))
@@ -44,18 +60,9 @@ t_tex_status	is_texture(int *id, char *line, t_tex *tex)
 		*id = TEX_F;
 	else if (!ft_strncmp(line, "C", 1) && ft_isspace(line[1]))
 		*id = TEX_C;
-	if (*id)
-	{
-		if (*id & tex->mask)
-			return (TEX_DUPLICATE);
-	}
-	else if (ft_is_empty(line))
-		return (TEX_SPACES);
-	else if (ft_is_included(line, MAP))
-		return (TEX_MAP);
-	else if (!*id)
-		return (TEX_INVALID);
-	return (TEX_VALID);
+	if ((tex->mask & TEX_ALL) == TEX_ALL)
+		*state = STATE_MAP;
+	return (acquire_tex(*id, line, tex));
 }
 
 void	skip_white_spaces(char **line, int skip)
