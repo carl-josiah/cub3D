@@ -6,10 +6,11 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 15:32:33 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/15 18:58:17 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/18 07:37:25 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "enums.h"
 #include <parsing.h>
 
 static void	handle_config(char *line, t_data *data, int *id, t_state *state)
@@ -38,6 +39,8 @@ static void	handle_config(char *line, t_data *data, int *id, t_state *state)
 
 static void	handle_map(char *line, t_data *data)
 {
+	if (*line)
+		data->tex.mask |= TEX_MAP_MASK;
 	return ;
 }
 
@@ -47,8 +50,8 @@ static void	handle_line(char *line, t_data *data, t_state *state)
 
 	if (*state == STATE_CONFIG)
 		handle_config(line, data, &id, state);
-	// if (*state == STATE_MAP)
-	// 	handle_map(line, data);
+	if (*state == STATE_MAP)
+		handle_map(line, data);
 }
 
 void	parse_file(char **lines, t_data *data)
@@ -74,5 +77,7 @@ void	parse_file(char **lines, t_data *data)
 		throw_direction_error(data);
 	if ((data->tex.mask & TEX_COLOR) != TEX_COLOR)
 		throw_color_error(data);
+	if ((data->tex.mask & TEX_MAP_MASK) != TEX_MAP_MASK)
+		exit_error(data, MISSING_MAP, NULL, NL);
 	// print_grid((const char **)data->map.grid, data->map.height);
 }
