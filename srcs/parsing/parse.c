@@ -6,11 +6,10 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 15:32:33 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/18 07:37:25 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/18 07:40:21 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "enums.h"
 #include <parsing.h>
 
 static void	handle_config(char *line, t_data *data, int *id, t_state *state)
@@ -19,7 +18,7 @@ static void	handle_config(char *line, t_data *data, int *id, t_state *state)
 
 	*id = 0;
 	skip_white_spaces(&line, 0);
-	status = is_texture(id, line, &data->tex, state);
+	status = is_texture(id, line, &data->tex);
 	if (status == TEX_VALID)
 	{
 		if (*id & TEX_DIR)

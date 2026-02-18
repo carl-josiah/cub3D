@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 14:33:12 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/15 19:01:12 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/18 07:39:27 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static t_tex_status	acquire_tex(int id, char *line, t_tex *tex)
 	return (TEX_VALID);
 }
 
-t_tex_status	is_texture(int *id, char *line, t_tex *tex, t_state *state)
+t_tex_status	is_texture(int *id, char *line, t_tex *tex)
 {
 	*id = 0;
 	if (!ft_strncmp(line, "NO", 2) && ft_isspace(line[2]))
@@ -60,8 +60,6 @@ t_tex_status	is_texture(int *id, char *line, t_tex *tex, t_state *state)
 		*id = TEX_F;
 	else if (!ft_strncmp(line, "C", 1) && ft_isspace(line[1]))
 		*id = TEX_C;
-	if ((tex->mask & TEX_ALL) == TEX_ALL)
-		*state = STATE_MAP;
 	return (acquire_tex(*id, line, tex));
 }
 
