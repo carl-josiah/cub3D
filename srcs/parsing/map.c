@@ -19,9 +19,10 @@ int	count_map_height(char **line)
 	i = 0;
 	while (line[i])
 	{
+		printf("line[i]: %s", line[i]);
 		i++;
 	}
-	printf("%d\n", i);
+	printf("no of lines: %d\n", i);
 	return (i);
 }
 

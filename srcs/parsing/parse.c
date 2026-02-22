@@ -64,12 +64,12 @@ void	parse_file(char **lines, t_data *data)
 		exit_error(NULL, EMPTY_FILE, NULL, NL);
 	while (*lines)
 	{
+		handle_line(*lines, data, &state);
 		if (state == STATE_MAP && flag == 0)
 		{
 			count_map_height(lines);
 			flag = 1;
 		}
-		handle_line(*lines, data, &state);
 		lines++;
 	}
 	if ((data->tex.mask & TEX_DIR) != TEX_DIR)
