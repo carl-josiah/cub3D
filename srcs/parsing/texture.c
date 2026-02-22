@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:53:40 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/10 16:35:19 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/22 12:14:34 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,34 +21,6 @@ static void	validate_line_argc(char *line)
 		exit_error(NULL, NO_TEXTURE, line, NO_NL);
 	if (count > 2)
 		exit_error(NULL, INVALID_TEXTURE, line, NO_NL);
-}
-
-static int	error_check(char *ptr, int *rgb, int i)
-{
-	char	*start;
-
-	start = ptr;
-	if (!ft_isdigit(*ptr))
-		return (0);
-	while (ft_isdigit(*ptr))
-		ptr++;
-	if (i < 2)
-	{
-		if (*ptr && *ptr != ',')
-			return (0);
-	}
-	else if (i == 2)
-	{
-		while (ft_isspace(*ptr))
-			ptr++;
-		if (*ptr && !ft_isspace(*ptr))
-			return (0);
-	}
-	if (!ft_atoi_safe(start, &rgb[i]))
-		return (0);
-	if (rgb[i] < 0 || rgb[i] > 255)
-		return (0);
-	return (1);
 }
 
 static void	extract_color(char *line, int *rgb)

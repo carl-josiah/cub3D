@@ -6,7 +6,7 @@
 #    By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
-#    Updated: 2026/02/15 11:47:10 by ccastro          ###   ########.fr        #
+#    Updated: 2026/02/22 12:11:37 by ccastro          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,7 @@ CFLAGS					+= -I$(MLX_DIR) -Iincs -I$(LIBFT_DIR)/incs
 
 MAIN					:= cub3d.c
 PARSING_SRCS			:= validate.c texture.c helpers.c read.c parse.c map.c
-CLEANUP_SRCS			:= exit_error.c free.c col_error.c dir_error.c id_error.c
+CLEANUP_SRCS			:= exit_error.c free.c col_error.c dir_error.c id_error.c error_check.c
 UTILS_SRCS				:= initialize.c
 DEBUG_SRCS				:= print.c
 

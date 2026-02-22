@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 10:25:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/18 07:41:00 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/22 12:14:40 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,6 @@ int						rgb_to_int(int r, int g, int b);
 void					forbid_garbage(char *ptr, char *line);
 int						consume_map_line(char **line, t_data *data);
 int						count_map_height(char **line);
+int						error_check(char *ptr, int *rgb, int i);
 
 #endif
