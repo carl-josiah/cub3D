@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/23 15:32:33 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/18 07:40:21 by ccastro          ###   ########.fr       */
+/*   Created: 2026/02/22 12:03:27 by ccastro           #+#    #+#             */
+/*   Updated: 2026/02/22 12:34:04 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static void	handle_config(char *line, t_data *data, int *id, t_state *state)
 	if (status == TEX_VALID)
 	{
 		if (*id & TEX_DIR)
-			parse_direction(*id, line, &data->tex);
+			parse_direction(*id, line, data);
 		else if (*id & TEX_COLOR)
 			parse_color(*id, line, &data->tex);
 	}

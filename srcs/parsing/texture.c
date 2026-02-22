@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:53:40 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/22 12:14:34 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/22 12:35:44 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,24 +48,35 @@ static void	extract_color(char *line, int *rgb)
 		exit_error(NULL, INVALID_COLOR, line, NO_NL);
 }
 
-void	parse_direction(int id, char *line, t_tex *tex)
+static int	path_validation(char *texture)
+{
+	int	fd;
+
+	fd = open(texture, O_RDONLY);
+	// if (fd == -1)
+	//
+	return (1);
+}
+
+void	parse_direction(int id, char *line, t_data *data)
 {
 	char	*texture;
 
 	validate_line_argc(line);
 	skip_white_spaces(&line, 2);
 	texture = ft_strtrim(line, SPACES);
-	if (!texture)
-		exit_error(NULL, MALLOC, NULL, NL);
+	if (!texture || !path_validation(texture))
+		exit_error(data, MALLOC, NULL, NL);
+	printf("texture: [%s]\n", texture);
 	if (id == TEX_NO)
-		tex->no = texture;
+		data->tex.no = texture;
 	else if (id == TEX_SO)
-		tex->so = texture;
+		data->tex.so = texture;
 	else if (id == TEX_EA)
-		tex->ea = texture;
+		data->tex.ea = texture;
 	else if (id == TEX_WE)
-		tex->we = texture;
-	tex->mask |= id;
+		data->tex.we = texture;
+	data->tex.mask |= id;
 }
 
 void	parse_color(int id, char *line, t_tex *tex)
