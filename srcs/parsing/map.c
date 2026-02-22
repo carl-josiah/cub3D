@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 11:53:10 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/15 18:55:48 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/22 12:20:42 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,8 @@ int	count_map_height(char **line)
 	i = 0;
 	while (line[i])
 	{
-		printf("line[i]: %s", line[i]);
 		i++;
 	}
-	printf("no of lines: %d\n", i);
 	return (i);
 }
 
