@@ -6,10 +6,13 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 12:03:27 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/22 12:34:04 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/24 13:34:42 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "cleanup.h"
+#include "defines.h"
+#include "libft.h"
 #include <parsing.h>
 
 static void	handle_config(char *line, t_data *data, int *id, t_state *state)
@@ -38,9 +41,18 @@ static void	handle_config(char *line, t_data *data, int *id, t_state *state)
 
 static void	handle_map(char *line, t_data *data)
 {
-	if (*line)
-		data->tex.mask |= TEX_MAP_MASK;
-	return ;
+	char	*map_line;
+
+	if (ft_is_empty(line))
+		exit_error(data, EMPTY_LINE, NULL, NL);
+	if (!ft_str_is_charset(line, MAP_CHARS))
+		exit_error(data, INVALID_MAP_LINE, line, NO_NL);
+	map_line = ft_strtrim(line, "\n");
+	if (!map_line)
+		exit_error(data, MALLOC, NULL, NL);
+	// add your logic here
+	free(map_line);
+	data->tex.mask |= TEX_MAP_MASK;
 }
 
 static void	handle_line(char *line, t_data *data, t_state *state)

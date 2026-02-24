@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:46:29 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/23 08:30:09 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/24 13:16:32 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,6 @@
 # define MISSING_MAP "Missing Map"
 
 # define EMPTY_LINE "Empty Line Inside Map"
+# define INVALID_MAP_LINE "Invalid Characters Inside Map"
 
 #endif

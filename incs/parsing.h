@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 10:25:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/22 12:33:43 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/24 12:03:19 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void					skip_white_spaces(char **line, int skip);
 void					throw_id_error(int id, t_tex *tex);
 int						rgb_to_int(int r, int g, int b);
 void					forbid_garbage(char *ptr, char *line);
-int						consume_map_line(char **line, t_data *data);
+int						consume_map_line(char *line, t_data *data);
 int						count_map_height(char **line);
 int						error_check(char *ptr, int *rgb, int i);
 
