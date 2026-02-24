@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:46:29 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/18 07:42:07 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/23 08:30:09 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@
 # define MAP_CHARS "01NSEW \t\n\v\f\r"
 # define DUPLICATE_TEXTURE "Duplicate Texture"
 # define INVALID_TEXTURE "Invalid Texture"
+# define INVALID_PATH "Invalid Texture Path"
 # define INVALID_IDENTIFIER "Invalid Identifier"
 # define NO_TEXTURE "No Path Indicated"
 # define INCOMPLETE_TEXTURE "Incomplete Configuration\nAdd Direction and Color"
