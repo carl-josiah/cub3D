@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 13:37:11 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/11 12:51:20 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/11 17:55:36 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,4 +61,11 @@ void	free_map(t_data *data)
 	}
 	free(data->map.grid);
 	data->map.grid = NULL;
+}
+
+void	free_all(char **lines, t_data *data)
+{
+	free_double_ptr(lines);
+	free_textures(&data->tex);
+	free_map(data);
 }

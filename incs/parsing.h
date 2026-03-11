@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 10:25:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/11 12:54:57 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/11 17:53:54 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void					args_validation(int ac, char **av);
 void					parse_direction(int id, char *line, t_data *data);
 void					parse_color(int id, char *line, t_tex *tex);
 t_tex_status			is_texture(int *id, char *line, t_tex *tex);
-char					**read_cub_file(const char *cub_file, size_t *line_count);
+char					**read_cub_file(const char *cub_file, size_t *lc);
 void					parse_file(char **lines, t_data *data);
 void					skip_white_spaces(char **line, int skip);
 void					throw_id_error(int id, t_tex *tex);

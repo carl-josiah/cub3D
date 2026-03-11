@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 19:19:22 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/11 12:54:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/11 17:53:53 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ static char	**get_lines(int fd, size_t line_count)
 	return (lines);
 }
 
-char	**read_cub_file(const char *cub_file, size_t *line_count)
+char	**read_cub_file(const char *cub_file, size_t *lc)
 {
 	int		fd;
 	char	**lines;
@@ -61,12 +61,12 @@ char	**read_cub_file(const char *cub_file, size_t *line_count)
 	fd = open(cub_file, O_RDONLY);
 	if (fd == -1)
 		return (NULL);
-	*line_count = count_lines(fd);
+	*lc = count_lines(fd);
 	close(fd);
 	fd = open(cub_file, O_RDONLY);
 	if (fd == -1)
 		return (NULL);
-	lines = get_lines(fd, *line_count);
+	lines = get_lines(fd, *lc);
 	close(fd);
 	if (!lines)
 		return (NULL);

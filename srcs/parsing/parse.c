@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 12:03:27 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/11 12:54:33 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/11 17:42:20 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ void	parse_file(char **lines, t_data *data)
 	if (!*lines)
 	{
 		free_double_ptr(lines);
-		exit_error(NULL, EMPTY_FILE, NULL, NL);
+		exit_error(data, EMPTY_FILE, NULL, NL);
 	}
 	while (*lines)
 	{

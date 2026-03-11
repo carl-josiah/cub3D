@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:44:10 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/07 14:09:42 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/11 17:35:16 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +42,17 @@ typedef struct s_player
 	char	dir;
 }			t_player;
 
+typedef struct s_file
+{
+	char	**lines;
+}			t_file;
+
 typedef struct s_data
 {
 	t_tex		tex;
 	t_map		map;
 	t_player	player;
+	t_file		file;
 	// t_mlx
 }				t_data;
 
