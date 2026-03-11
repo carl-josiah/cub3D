@@ -6,13 +6,10 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 12:03:27 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/24 13:34:42 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/11 12:54:33 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cleanup.h"
-#include "defines.h"
-#include "libft.h"
 #include <parsing.h>
 
 static void	handle_config(char *line, t_data *data, int *id, t_state *state)
@@ -50,8 +47,7 @@ static void	handle_map(char *line, t_data *data)
 	map_line = ft_strtrim(line, "\n");
 	if (!map_line)
 		exit_error(data, MALLOC, NULL, NL);
-	// add your logic here
-	free(map_line);
+	store_map_line(map_line, data);
 	data->tex.mask |= TEX_MAP_MASK;
 }
 
@@ -65,6 +61,15 @@ static void	handle_line(char *line, t_data *data, t_state *state)
 		handle_map(line, data);
 }
 
+static int	allocate_grid(char **lines, t_data *data)
+{
+	data->map.height = count_map_height(lines);
+	data->map.grid = ft_calloc(sizeof(char *), (data->map.height + 1));
+	if (!data->map.grid)
+		exit_error(data, MALLOC, NULL, NL);
+	return (1);
+}
+
 void	parse_file(char **lines, t_data *data)
 {
 	t_state	state;
@@ -73,15 +78,15 @@ void	parse_file(char **lines, t_data *data)
 	state = STATE_CONFIG;
 	flag = 0;
 	if (!*lines)
+	{
+		free_double_ptr(lines);
 		exit_error(NULL, EMPTY_FILE, NULL, NL);
+	}
 	while (*lines)
 	{
 		handle_line(*lines, data, &state);
 		if (state == STATE_MAP && flag == 0)
-		{
-			count_map_height(lines);
-			flag = 1;
-		}
+			flag = allocate_grid(lines, data);
 		lines++;
 	}
 	if ((data->tex.mask & TEX_DIR) != TEX_DIR)
@@ -90,5 +95,4 @@ void	parse_file(char **lines, t_data *data)
 		throw_color_error(data);
 	if ((data->tex.mask & TEX_MAP_MASK) != TEX_MAP_MASK)
 		exit_error(data, MISSING_MAP, NULL, NL);
-	// print_grid((const char **)data->map.grid, data->map.height);
 }

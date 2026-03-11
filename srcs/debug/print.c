@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 16:07:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/15 13:51:57 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/08 00:51:10 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,15 @@ int	print_for_me(const char *path)
 	return (0);
 }
 
-void	print_grid(const char **grid, int height)
+void	print_grid(t_data *data)
 {
 	int	i;
 
 	i = 0;
-	while (i < height)
+	while (i < data->map.height)
 	{
-		printf("%s", grid[i]);
+		if (data->map.grid[i])
+			printf("row[%i]: %s\n", i, data->map.grid[i]);
 		i++;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:25:08 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/10 16:41:07 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/11 17:32:56 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@ static void	free_functions(t_data *data)
 	if (!data)
 		return ;
 	free_textures(&data->tex);
-	// map array
-	// if (data->map)
-	// 		free_split(data->map);
+	free_map(data);
 }
 
 static void	with_message(char *msg, char *specific)

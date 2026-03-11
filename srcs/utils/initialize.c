@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 19:10:30 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/25 19:17:29 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/07 14:09:58 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ static void	init_map(t_map *map)
 	map->width = 0;
 	map->height = 0;
 	map->grid = NULL;
+	map->row = 0;
 }
 
 static void	init_player(t_player *player)

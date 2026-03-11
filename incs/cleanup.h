@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:25:28 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/18 07:28:50 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/11 12:54:31 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ void					free_double_ptr(char **ptr);
 void					free_textures(t_tex *tex);
 void					throw_color_error(t_data *data);
 void					throw_direction_error(t_data *data);
+void					free_map(t_data *data);
 
 #endif

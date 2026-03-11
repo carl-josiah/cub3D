@@ -1,0 +1,1464 @@
+[
+  {
+    "file": "srcs/char/ft_isalnum.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/char/ft_isalnum.c",
+      "-o",
+      "objs/srcs/char/ft_isalnum.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_isalnum.o"
+  },
+  {
+    "file": "srcs/char/ft_isalpha.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/char/ft_isalpha.c",
+      "-o",
+      "objs/srcs/char/ft_isalpha.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_isalpha.o"
+  },
+  {
+    "file": "srcs/char/ft_isascii.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/char/ft_isascii.c",
+      "-o",
+      "objs/srcs/char/ft_isascii.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_isascii.o"
+  },
+  {
+    "file": "srcs/char/ft_isdigit.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/char/ft_isdigit.c",
+      "-o",
+      "objs/srcs/char/ft_isdigit.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_isdigit.o"
+  },
+  {
+    "file": "srcs/char/ft_isprint.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/char/ft_isprint.c",
+      "-o",
+      "objs/srcs/char/ft_isprint.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_isprint.o"
+  },
+  {
+    "file": "srcs/char/ft_isspace.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/char/ft_isspace.c",
+      "-o",
+      "objs/srcs/char/ft_isspace.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_isspace.o"
+  },
+  {
+    "file": "srcs/char/ft_tolower.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/char/ft_tolower.c",
+      "-o",
+      "objs/srcs/char/ft_tolower.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_tolower.o"
+  },
+  {
+    "file": "srcs/char/ft_toupper.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/char/ft_toupper.c",
+      "-o",
+      "objs/srcs/char/ft_toupper.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_toupper.o"
+  },
+  {
+    "file": "srcs/clean/ft_free_ptr.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/clean/ft_free_ptr.c",
+      "-o",
+      "objs/srcs/clean/ft_free_ptr.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/clean/ft_free_ptr.o"
+  },
+  {
+    "file": "srcs/clean/ft_free_str_array.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/clean/ft_free_str_array.c",
+      "-o",
+      "objs/srcs/clean/ft_free_str_array.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/clean/ft_free_str_array.o"
+  },
+  {
+    "file": "srcs/custom/ft_count_words.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/custom/ft_count_words.c",
+      "-o",
+      "objs/srcs/custom/ft_count_words.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/custom/ft_count_words.o"
+  },
+  {
+    "file": "srcs/custom/ft_is_empty.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/custom/ft_is_empty.c",
+      "-o",
+      "objs/srcs/custom/ft_is_empty.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/custom/ft_is_empty.o"
+  },
+  {
+    "file": "srcs/custom/ft_atoi_safe.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/custom/ft_atoi_safe.c",
+      "-o",
+      "objs/srcs/custom/ft_atoi_safe.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/custom/ft_atoi_safe.o"
+  },
+  {
+    "file": "srcs/custom/ft_ischar.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/custom/ft_ischar.c",
+      "-o",
+      "objs/srcs/custom/ft_ischar.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/custom/ft_ischar.o"
+  },
+  {
+    "file": "srcs/custom/ft_nbrlen.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/custom/ft_nbrlen.c",
+      "-o",
+      "objs/srcs/custom/ft_nbrlen.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/custom/ft_nbrlen.o"
+  },
+  {
+    "file": "srcs/custom/ft_str_is_charset.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/custom/ft_str_is_charset.c",
+      "-o",
+      "objs/srcs/custom/ft_str_is_charset.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/custom/ft_str_is_charset.o"
+  },
+  {
+    "file": "srcs/fd/ft_putchar_fd.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/fd/ft_putchar_fd.c",
+      "-o",
+      "objs/srcs/fd/ft_putchar_fd.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/fd/ft_putchar_fd.o"
+  },
+  {
+    "file": "srcs/fd/ft_putendl_fd.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/fd/ft_putendl_fd.c",
+      "-o",
+      "objs/srcs/fd/ft_putendl_fd.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/fd/ft_putendl_fd.o"
+  },
+  {
+    "file": "srcs/fd/ft_putnbr_fd.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/fd/ft_putnbr_fd.c",
+      "-o",
+      "objs/srcs/fd/ft_putnbr_fd.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/fd/ft_putnbr_fd.o"
+  },
+  {
+    "file": "srcs/fd/ft_putstr_fd.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/fd/ft_putstr_fd.c",
+      "-o",
+      "objs/srcs/fd/ft_putstr_fd.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/fd/ft_putstr_fd.o"
+  },
+  {
+    "file": "srcs/list/ft_lstadd_back.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/list/ft_lstadd_back.c",
+      "-o",
+      "objs/srcs/list/ft_lstadd_back.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstadd_back.o"
+  },
+  {
+    "file": "srcs/list/ft_lstadd_front.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/list/ft_lstadd_front.c",
+      "-o",
+      "objs/srcs/list/ft_lstadd_front.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstadd_front.o"
+  },
+  {
+    "file": "srcs/list/ft_lstclear.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/list/ft_lstclear.c",
+      "-o",
+      "objs/srcs/list/ft_lstclear.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstclear.o"
+  },
+  {
+    "file": "srcs/list/ft_lstdelone.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/list/ft_lstdelone.c",
+      "-o",
+      "objs/srcs/list/ft_lstdelone.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstdelone.o"
+  },
+  {
+    "file": "srcs/list/ft_lstiter.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/list/ft_lstiter.c",
+      "-o",
+      "objs/srcs/list/ft_lstiter.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstiter.o"
+  },
+  {
+    "file": "srcs/list/ft_lstlast.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/list/ft_lstlast.c",
+      "-o",
+      "objs/srcs/list/ft_lstlast.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstlast.o"
+  },
+  {
+    "file": "srcs/list/ft_lstmap.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/list/ft_lstmap.c",
+      "-o",
+      "objs/srcs/list/ft_lstmap.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstmap.o"
+  },
+  {
+    "file": "srcs/list/ft_lstnew.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/list/ft_lstnew.c",
+      "-o",
+      "objs/srcs/list/ft_lstnew.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstnew.o"
+  },
+  {
+    "file": "srcs/list/ft_lstsize.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/list/ft_lstsize.c",
+      "-o",
+      "objs/srcs/list/ft_lstsize.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstsize.o"
+  },
+  {
+    "file": "srcs/mem/ft_bzero.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/mem/ft_bzero.c",
+      "-o",
+      "objs/srcs/mem/ft_bzero.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_bzero.o"
+  },
+  {
+    "file": "srcs/mem/ft_calloc.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/mem/ft_calloc.c",
+      "-o",
+      "objs/srcs/mem/ft_calloc.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_calloc.o"
+  },
+  {
+    "file": "srcs/mem/ft_memchr.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/mem/ft_memchr.c",
+      "-o",
+      "objs/srcs/mem/ft_memchr.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_memchr.o"
+  },
+  {
+    "file": "srcs/mem/ft_memcmp.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/mem/ft_memcmp.c",
+      "-o",
+      "objs/srcs/mem/ft_memcmp.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_memcmp.o"
+  },
+  {
+    "file": "srcs/mem/ft_memcpy.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/mem/ft_memcpy.c",
+      "-o",
+      "objs/srcs/mem/ft_memcpy.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_memcpy.o"
+  },
+  {
+    "file": "srcs/mem/ft_memmove.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/mem/ft_memmove.c",
+      "-o",
+      "objs/srcs/mem/ft_memmove.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_memmove.o"
+  },
+  {
+    "file": "srcs/mem/ft_memset.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/mem/ft_memset.c",
+      "-o",
+      "objs/srcs/mem/ft_memset.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_memset.o"
+  },
+  {
+    "file": "srcs/misc/ft_atoi.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/misc/ft_atoi.c",
+      "-o",
+      "objs/srcs/misc/ft_atoi.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/misc/ft_atoi.o"
+  },
+  {
+    "file": "srcs/str/ft_itoa.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_itoa.c",
+      "-o",
+      "objs/srcs/str/ft_itoa.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_itoa.o"
+  },
+  {
+    "file": "srcs/str/ft_split.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_split.c",
+      "-o",
+      "objs/srcs/str/ft_split.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_split.o"
+  },
+  {
+    "file": "srcs/str/ft_strchr.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_strchr.c",
+      "-o",
+      "objs/srcs/str/ft_strchr.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strchr.o"
+  },
+  {
+    "file": "srcs/str/ft_strcspn.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_strcspn.c",
+      "-o",
+      "objs/srcs/str/ft_strcspn.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strcspn.o"
+  },
+  {
+    "file": "srcs/str/ft_strdup.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_strdup.c",
+      "-o",
+      "objs/srcs/str/ft_strdup.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strdup.o"
+  },
+  {
+    "file": "srcs/str/ft_striteri.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_striteri.c",
+      "-o",
+      "objs/srcs/str/ft_striteri.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_striteri.o"
+  },
+  {
+    "file": "srcs/str/ft_strjoin.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_strjoin.c",
+      "-o",
+      "objs/srcs/str/ft_strjoin.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strjoin.o"
+  },
+  {
+    "file": "srcs/str/ft_strlcat.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_strlcat.c",
+      "-o",
+      "objs/srcs/str/ft_strlcat.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strlcat.o"
+  },
+  {
+    "file": "srcs/str/ft_strlcpy.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_strlcpy.c",
+      "-o",
+      "objs/srcs/str/ft_strlcpy.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strlcpy.o"
+  },
+  {
+    "file": "srcs/str/ft_strlen.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_strlen.c",
+      "-o",
+      "objs/srcs/str/ft_strlen.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strlen.o"
+  },
+  {
+    "file": "srcs/str/ft_strmapi.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_strmapi.c",
+      "-o",
+      "objs/srcs/str/ft_strmapi.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strmapi.o"
+  },
+  {
+    "file": "srcs/str/ft_strncmp.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_strncmp.c",
+      "-o",
+      "objs/srcs/str/ft_strncmp.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strncmp.o"
+  },
+  {
+    "file": "srcs/str/ft_strnstr.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_strnstr.c",
+      "-o",
+      "objs/srcs/str/ft_strnstr.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strnstr.o"
+  },
+  {
+    "file": "srcs/str/ft_strrchr.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_strrchr.c",
+      "-o",
+      "objs/srcs/str/ft_strrchr.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strrchr.o"
+  },
+  {
+    "file": "srcs/str/ft_strtrim.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_strtrim.c",
+      "-o",
+      "objs/srcs/str/ft_strtrim.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strtrim.o"
+  },
+  {
+    "file": "srcs/str/ft_substr.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "srcs/str/ft_substr.c",
+      "-o",
+      "objs/srcs/str/ft_substr.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_substr.o"
+  },
+  {
+    "file": "gnl/get_next_line_bonus.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "gnl/get_next_line_bonus.c",
+      "-o",
+      "objs/gnl/get_next_line_bonus.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/gnl/get_next_line_bonus.o"
+  },
+  {
+    "file": "gnl/get_next_line_utils.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I.",
+      "-Ift_printf/",
+      "-Ignl/",
+      "-c",
+      "gnl/get_next_line_utils.c",
+      "-o",
+      "objs/gnl/get_next_line_utils.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom",
+    "output": "objs/gnl/get_next_line_utils.o"
+  },
+  {
+    "file": "ft_printf.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "ft_printf.c",
+      "-o",
+      "ft_printf.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_printf.o"
+  },
+  {
+    "file": "ft_putchar.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "ft_putchar.c",
+      "-o",
+      "ft_putchar.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_putchar.o"
+  },
+  {
+    "file": "ft_putnbr.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "ft_putnbr.c",
+      "-o",
+      "ft_putnbr.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_putnbr.o"
+  },
+  {
+    "file": "ft_putstr.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "ft_putstr.c",
+      "-o",
+      "ft_putstr.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_putstr.o"
+  },
+  {
+    "file": "ft_puthex_low.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "ft_puthex_low.c",
+      "-o",
+      "ft_puthex_low.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_puthex_low.o"
+  },
+  {
+    "file": "ft_puthex_upp.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "ft_puthex_upp.c",
+      "-o",
+      "ft_puthex_upp.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_puthex_upp.o"
+  },
+  {
+    "file": "ft_putptr.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "ft_putptr.c",
+      "-o",
+      "ft_putptr.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_putptr.o"
+  },
+  {
+    "file": "ft_putnbr_uns.c",
+    "arguments": [
+      "cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "ft_putnbr_uns.c",
+      "-o",
+      "ft_putnbr_uns.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_putnbr_uns.o"
+  },
+  {
+    "file": "mlx_shaders.c",
+    "arguments": [
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
+      "-c",
+      "-o",
+      "mlx_shaders.o",
+      "mlx_shaders.c"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/minilibx_opengl_20191021",
+    "output": "mlx_shaders.o"
+  },
+  {
+    "file": "mlx_new_window.m",
+    "arguments": [
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
+      "-c",
+      "-o",
+      "mlx_new_window.o",
+      "mlx_new_window.m"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/minilibx_opengl_20191021",
+    "output": "mlx_new_window.o"
+  },
+  {
+    "file": "mlx_init_loop.m",
+    "arguments": [
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
+      "-c",
+      "-o",
+      "mlx_init_loop.o",
+      "mlx_init_loop.m"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/minilibx_opengl_20191021",
+    "output": "mlx_init_loop.o"
+  },
+  {
+    "file": "mlx_new_image.m",
+    "arguments": [
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
+      "-c",
+      "-o",
+      "mlx_new_image.o",
+      "mlx_new_image.m"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/minilibx_opengl_20191021",
+    "output": "mlx_new_image.o"
+  },
+  {
+    "file": "mlx_xpm.c",
+    "arguments": [
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
+      "-c",
+      "-o",
+      "mlx_xpm.o",
+      "mlx_xpm.c"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/minilibx_opengl_20191021",
+    "output": "mlx_xpm.o"
+  },
+  {
+    "file": "mlx_int_str_to_wordtab.c",
+    "arguments": [
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
+      "-c",
+      "-o",
+      "mlx_int_str_to_wordtab.o",
+      "mlx_int_str_to_wordtab.c"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/minilibx_opengl_20191021",
+    "output": "mlx_int_str_to_wordtab.o"
+  },
+  {
+    "file": "mlx_png.c",
+    "arguments": [
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
+      "-c",
+      "-o",
+      "mlx_png.o",
+      "mlx_png.c"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/minilibx_opengl_20191021",
+    "output": "mlx_png.o"
+  },
+  {
+    "file": "mlx_mouse.m",
+    "arguments": [
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
+      "-c",
+      "-o",
+      "mlx_mouse.o",
+      "mlx_mouse.m"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D/minilibx_opengl_20191021",
+    "output": "mlx_mouse.o"
+  },
+  {
+    "file": "srcs/cub3d.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/cub3d.c",
+      "-o",
+      "objs/cub3d.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/cub3d.o"
+  },
+  {
+    "file": "srcs/parsing/validate.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/parsing/validate.c",
+      "-o",
+      "objs/parsing/validate.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/parsing/validate.o"
+  },
+  {
+    "file": "srcs/parsing/texture.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/parsing/texture.c",
+      "-o",
+      "objs/parsing/texture.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/parsing/texture.o"
+  },
+  {
+    "file": "srcs/parsing/helpers.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/parsing/helpers.c",
+      "-o",
+      "objs/parsing/helpers.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/parsing/helpers.o"
+  },
+  {
+    "file": "srcs/parsing/read.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/parsing/read.c",
+      "-o",
+      "objs/parsing/read.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/parsing/read.o"
+  },
+  {
+    "file": "srcs/parsing/parse.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/parsing/parse.c",
+      "-o",
+      "objs/parsing/parse.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/parsing/parse.o"
+  },
+  {
+    "file": "srcs/parsing/map.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/parsing/map.c",
+      "-o",
+      "objs/parsing/map.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/parsing/map.o"
+  },
+  {
+    "file": "srcs/cleanup/exit_error.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/cleanup/exit_error.c",
+      "-o",
+      "objs/cleanup/exit_error.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/cleanup/exit_error.o"
+  },
+  {
+    "file": "srcs/cleanup/free.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/cleanup/free.c",
+      "-o",
+      "objs/cleanup/free.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/cleanup/free.o"
+  },
+  {
+    "file": "srcs/cleanup/col_error.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/cleanup/col_error.c",
+      "-o",
+      "objs/cleanup/col_error.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/cleanup/col_error.o"
+  },
+  {
+    "file": "srcs/cleanup/dir_error.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/cleanup/dir_error.c",
+      "-o",
+      "objs/cleanup/dir_error.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/cleanup/dir_error.o"
+  },
+  {
+    "file": "srcs/cleanup/id_error.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/cleanup/id_error.c",
+      "-o",
+      "objs/cleanup/id_error.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/cleanup/id_error.o"
+  },
+  {
+    "file": "srcs/cleanup/error_check.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/cleanup/error_check.c",
+      "-o",
+      "objs/cleanup/error_check.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/cleanup/error_check.o"
+  },
+  {
+    "file": "srcs/utils/initialize.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/utils/initialize.c",
+      "-o",
+      "objs/utils/initialize.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/utils/initialize.o"
+  },
+  {
+    "file": "srcs/debug/print.c",
+    "arguments": [
+      "cc",
+      "-g3",
+      "-Iminilibx_opengl_20191021",
+      "-Iincs",
+      "-Ilibft-custom/incs",
+      "-c",
+      "srcs/debug/print.c",
+      "-o",
+      "objs/debug/print.o"
+    ],
+    "directory": "/Users/carljosiah/Documents/clang/42-Cursus/cub3D",
+    "output": "objs/debug/print.o"
+  }
+]

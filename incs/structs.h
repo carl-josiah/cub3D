@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:44:10 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/29 16:10:50 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/07 14:09:42 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ typedef struct s_tex
 typedef struct s_map
 {
 	char	**grid;
+	int		row;
 	int		height;
 	int		width;
 }			t_map;
