@@ -6,10 +6,11 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 11:53:10 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/10 11:56:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/16 15:43:28 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <parsing.h>
 
 int	count_map_height(char **line)
@@ -34,4 +35,35 @@ void	store_map_line(char *map_line, t_data *data)
 		data->map.row++;
 	}
 	free(map_line);
+}
+
+static int	count_directions(char *row)
+{
+	int	count;
+
+	count = 0;
+	while (*row)
+	{
+		if (*row == 'N' || *row == 'S' || *row == 'E' || *row == 'W')
+			count++;
+		row++;
+	}
+	return (count);
+}
+
+int	valid_map(char **grid, t_data *data)
+{
+	int	i;
+	int	directions;
+
+	i = 0;
+	directions = 0;
+	while (i < data->map.height)
+	{
+		directions += count_directions(grid[i]);
+		i++;
+	}
+	if (directions != 1)
+		return (0);
+	return (1);
 }

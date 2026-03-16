@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 12:03:27 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/11 17:42:20 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/16 16:08:13 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,16 +38,14 @@ static void	handle_config(char *line, t_data *data, int *id, t_state *state)
 
 static void	handle_map(char *line, t_data *data)
 {
-	char	*map_line;
-
 	if (ft_is_empty(line))
 		exit_error(data, EMPTY_LINE, NULL, NL);
 	if (!ft_str_is_charset(line, MAP_CHARS))
-		exit_error(data, INVALID_MAP_LINE, line, NO_NL);
-	map_line = ft_strtrim(line, "\n");
-	if (!map_line)
+		exit_error(data, INVALID_MAP, line, NO_NL);
+	data->file.map_line = ft_strtrim(line, "\n");
+	if (!data->file.map_line)
 		exit_error(data, MALLOC, NULL, NL);
-	store_map_line(map_line, data);
+	store_map_line(data->file.map_line, data);
 	data->tex.mask |= TEX_MAP_MASK;
 }
 
@@ -57,7 +55,7 @@ static void	handle_line(char *line, t_data *data, t_state *state)
 
 	if (*state == STATE_CONFIG)
 		handle_config(line, data, &id, state);
-	if (*state == STATE_MAP)
+	else if (*state == STATE_MAP)
 		handle_map(line, data);
 }
 
@@ -72,22 +70,21 @@ static int	allocate_grid(char **lines, t_data *data)
 
 void	parse_file(char **lines, t_data *data)
 {
+	char	*invalid_line;
 	t_state	state;
 	int		flag;
 
 	state = STATE_CONFIG;
 	flag = 0;
 	if (!*lines)
-	{
-		free_double_ptr(lines);
 		exit_error(data, EMPTY_FILE, NULL, NL);
-	}
 	while (*lines)
 	{
 		handle_line(*lines, data, &state);
 		if (state == STATE_MAP && flag == 0)
 			flag = allocate_grid(lines, data);
-		lines++;
+		else
+			lines++;
 	}
 	if ((data->tex.mask & TEX_DIR) != TEX_DIR)
 		throw_direction_error(data);
@@ -95,4 +92,6 @@ void	parse_file(char **lines, t_data *data)
 		throw_color_error(data);
 	if ((data->tex.mask & TEX_MAP_MASK) != TEX_MAP_MASK)
 		exit_error(data, MISSING_MAP, NULL, NL);
+	if (!valid_map(data->map.grid, data))
+		exit_error(data, INVALID_MAP, NULL, NL);
 }

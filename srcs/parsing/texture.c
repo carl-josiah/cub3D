@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:53:40 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/11 17:52:43 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/11 18:05:42 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ void	parse_direction(int id, char *line, t_data *data)
 	if (!path_validation(texture))
 	{
 		free(texture);
-		exit_error(data, INVALID_PATH, line, NL);
+		exit_error(data, INVALID_PATH, line, NO_NL);
 	}
 	if (id == TEX_NO)
 		data->tex.no = texture;

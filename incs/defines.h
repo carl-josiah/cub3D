@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:46:29 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/24 13:16:32 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/16 16:07:30 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@
 # define EMPTY_FILE "Empty File"
 
 # define MAP_CHARS "01NSEW \t\n\v\f\r"
+# define MAP_DIRECTIONS "NSEW"
+
 # define DUPLICATE_TEXTURE "Duplicate Texture"
 # define INVALID_TEXTURE "Invalid Texture"
 # define INVALID_PATH "Invalid Texture Path"
@@ -47,6 +49,6 @@
 # define MISSING_MAP "Missing Map"
 
 # define EMPTY_LINE "Empty Line Inside Map"
-# define INVALID_MAP_LINE "Invalid Characters Inside Map"
+# define INVALID_MAP "Invalid Map"
 
 #endif

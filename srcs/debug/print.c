@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 16:07:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/08 00:51:10 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/16 14:14:26 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,7 @@ void	print_grid(t_data *data)
 	i = 0;
 	while (i < data->map.height)
 	{
-		if (data->map.grid[i])
-			printf("row[%i]: %s\n", i, data->map.grid[i]);
+		printf("row[%i]: %s\n", i, data->map.grid[i]);
 		i++;
 	}
 }

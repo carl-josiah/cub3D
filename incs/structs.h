@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:44:10 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/11 17:35:16 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/11 23:04:36 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ typedef struct s_player
 typedef struct s_file
 {
 	char	**lines;
+	size_t	line_count;
+	char	*map_line;
 }			t_file;
 
 typedef struct s_data
