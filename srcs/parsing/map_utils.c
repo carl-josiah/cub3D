@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 17:03:49 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/16 18:54:34 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/18 20:58:28 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,3 +68,16 @@ char	**copy_grid(char **grid, int height)
 	}
 	return (copied_grid);
 }
+
+void	store_map_line(char *map_line, t_data *data)
+{
+	if (data->map.row < data->map.height && map_line)
+	{
+		data->map.grid[data->map.row] = ft_strdup(map_line);
+		if (!data->map.grid[data->map.row])
+			exit_error(data, MALLOC, NULL, NL);
+		data->map.row++;
+	}
+	free(map_line);
+}
+
