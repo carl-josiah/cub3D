@@ -6,13 +6,13 @@
 #    By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
-#    Updated: 2026/02/22 12:11:37 by ccastro          ###   ########.fr        #
+#    Updated: 2026/03/16 17:05:43 by ccastro          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME					:= cub3D
 CC						:= cc
-CFLAGS					:= -g3 # -Wall -Wextra -Werror
+CFLAGS					:= -g3 -Wall -Wextra -Werror
 
 LIBFT_DIR				:= libft-custom
 LIBFT					:= $(LIBFT_DIR)/libft.a
@@ -40,7 +40,7 @@ endif
 CFLAGS					+= -I$(MLX_DIR) -Iincs -I$(LIBFT_DIR)/incs
 
 MAIN					:= cub3d.c
-PARSING_SRCS			:= validate.c texture.c helpers.c read.c parse.c map.c
+PARSING_SRCS			:= validate.c texture.c texture_utils.c read.c parse.c map.c map_utils.c
 CLEANUP_SRCS			:= exit_error.c free.c col_error.c dir_error.c id_error.c error_check.c
 UTILS_SRCS				:= initialize.c
 DEBUG_SRCS				:= print.c

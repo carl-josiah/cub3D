@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 13:37:11 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/11 17:55:36 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/16 18:42:44 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,19 +47,24 @@ void	free_textures(t_tex *tex)
 	tex->we = NULL;
 }
 
-void	free_map(t_data *data)
+void	free_grid(char **grid, int height)
 {
 	int	i;
 
 	i = 0;
-	if (!data->map.grid)
+	if (!grid)
 		return ;
-	while (i < data->map.height)
+	while (i < height)
 	{
-		free(data->map.grid[i]);
+		free(grid[i]);
 		i++;
 	}
-	free(data->map.grid);
+	free(grid);
+}
+
+void	free_map(t_data *data)
+{
+	free_grid(data->map.grid, data->map.height);
 	data->map.grid = NULL;
 }
 

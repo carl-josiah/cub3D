@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 10:25:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/16 14:49:24 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/18 20:31:10 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,9 @@ void					forbid_garbage(char *ptr, char *line);
 void					store_map_line(char *map_line, t_data *data);
 int						count_map_height(char **line);
 int						error_check(char *ptr, int *rgb, int i);
-int						valid_map(char **grid, t_data *data);
+void					validate_map(char **grid, t_data *data);
+int						count_directions(char **grid, int height);
+int						count_map_height(char **line);
+char					**copy_grid(char **grid, int height);
 
 #endif

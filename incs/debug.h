@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 16:05:31 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/08 00:40:03 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/16 18:38:33 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@
 # include <structs.h>
 
 int						print_for_me(const char *path);
-void					print_grid(t_data *data);
+void					print_grid(char **grid, int height);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 12:03:27 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/16 16:08:13 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/18 20:30:16 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,8 @@ static void	handle_map(char *line, t_data *data)
 {
 	if (ft_is_empty(line))
 		exit_error(data, EMPTY_LINE, NULL, NL);
-	if (!ft_str_is_charset(line, MAP_CHARS))
-		exit_error(data, INVALID_MAP, line, NO_NL);
+	if (!ft_str_has_charset(line, MAP_CHARS))
+		exit_error(data, MAP_INVALID_CHARS, line, NO_NL);
 	data->file.map_line = ft_strtrim(line, "\n");
 	if (!data->file.map_line)
 		exit_error(data, MALLOC, NULL, NL);
@@ -70,7 +70,6 @@ static int	allocate_grid(char **lines, t_data *data)
 
 void	parse_file(char **lines, t_data *data)
 {
-	char	*invalid_line;
 	t_state	state;
 	int		flag;
 
@@ -92,6 +91,5 @@ void	parse_file(char **lines, t_data *data)
 		throw_color_error(data);
 	if ((data->tex.mask & TEX_MAP_MASK) != TEX_MAP_MASK)
 		exit_error(data, MISSING_MAP, NULL, NL);
-	if (!valid_map(data->map.grid, data))
-		exit_error(data, INVALID_MAP, NULL, NL);
+	validate_map(data->map.grid, data);
 }
