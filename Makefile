@@ -6,20 +6,24 @@
 #    By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
-#    Updated: 2026/01/02 17:20:16 by ccastro          ###   ########.fr        #
+#    Updated: 2026/03/18 20:47:48 by ccastro          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME					:= cub3D
 CC						:= cc
-CFLAGS					:= -Wall -Wextra -Werror
-
-PARSING_DIR				:= parsing
-SRCS_DIR				:= srcs
-OBJS_DIR				:= objs
+CFLAGS					:= -g3 -Wall -Wextra -Werror
 
 LIBFT_DIR				:= libft-custom
 LIBFT					:= $(LIBFT_DIR)/libft.a
+
+SRCS_DIR				:= srcs
+OBJS_DIR				:= objs
+
+PARSING_DIR				:= parsing
+CLEANUP_DIR				:= cleanup
+UTILS_DIR				:= utils
+DEBUG_DIR				:= debug
 
 UNAME					:= $(shell uname -s)
 
@@ -35,10 +39,18 @@ endif
 
 CFLAGS					+= -I$(MLX_DIR) -Iincs -I$(LIBFT_DIR)/incs
 
-MAIN					:= cub3d.c 
+MAIN					:= cub3d.c
+PARSING_SRCS			:= validate.c texture.c texture_utils.c read.c parse.c map.c map_utils.c
+CLEANUP_SRCS			:= exit_error.c free.c col_error.c dir_error.c id_error.c error_check.c
+UTILS_SRCS				:= initialize.c
+DEBUG_SRCS				:= print.c
 
 ALL_SRCS				:= $(MAIN) \
-						   # $(addprefix $(PARSING_DIR)/, $(PARSING_SRCS)) \
+						   $(addprefix $(PARSING_DIR)/, $(PARSING_SRCS)) \
+						   $(addprefix $(CLEANUP_DIR)/, $(CLEANUP_SRCS)) \
+						   $(addprefix $(UTILS_DIR)/, $(UTILS_SRCS)) \
+						   $(addprefix $(DEBUG_DIR)/, $(DEBUG_SRCS)) \
+						   # $(addprefix $(EXECUTION_DIR)/, $(EXECUTION_SRCS)) \
 
 SRCS					:= $(addprefix $(SRCS_DIR)/, $(ALL_SRCS))
 OBJS					:= $(patsubst $(SRCS_DIR)/%.c, $(OBJS_DIR)/%.o, $(SRCS))
@@ -49,7 +61,7 @@ $(NAME): $(LIBFT) $(MLX_LIB) $(OBJS)
 	$(CC) $(OBJS) $(LIBFT) $(MLX_FLAGS) -o $(NAME)
 
 $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c
-	@mkdir -p $(dir $@)
+	mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(LIBFT):
