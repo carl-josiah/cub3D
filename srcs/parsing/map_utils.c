@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 17:03:49 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/18 20:58:28 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/23 17:41:29 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,4 +80,3 @@ void	store_map_line(char *map_line, t_data *data)
 	}
 	free(map_line);
 }
-

@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 12:03:27 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/18 20:30:16 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/19 23:39:41 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ static void	handle_line(char *line, t_data *data, t_state *state)
 {
 	int	id;
 
+	if (ft_strchr(line, 'r'))
+		exit_error(data, ERROR_CRLF, line, NO_NL);
 	if (*state == STATE_CONFIG)
 		handle_config(line, data, &id, state);
 	else if (*state == STATE_MAP)

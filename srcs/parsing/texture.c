@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:53:40 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/11 18:05:42 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/19 23:40:25 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,11 +50,19 @@ static void	extract_color(char *line, int *rgb)
 
 static int	path_validation(char *texture)
 {
-	int	fd;
+	int		fd;
+	char	buf;
+	ssize_t	r;
 
 	fd = open(texture, O_RDONLY);
-	if (fd == -1)
+	if (fd < 0)
 		return (0);
+	r = read(fd, &buf, 1);
+	if (r < 0 && errno == EISDIR)
+	{
+		close(fd);
+		return (0);
+	}
 	close(fd);
 	return (1);
 }

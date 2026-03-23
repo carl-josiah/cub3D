@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:46:29 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/16 19:21:25 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/19 23:29:04 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@
 
 # define ERROR_WITH_MSG "Error: "
 # define ERROR_NO_MSG "Error"
+
+# define ERROR_CRLF "CRLF detected\n"
 
 # define USAGE "Usage: ./cub3D [file_name].cub"
 # define MALLOC "Malloc Failure"
