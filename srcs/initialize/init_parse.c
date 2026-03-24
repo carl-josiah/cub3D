@@ -6,11 +6,11 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/24 11:51:51 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/24 11:58:08 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/24 13:16:17 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <utils.h>
+#include <initialize.h>
 
 void	init_tex(t_tex *tex)
 {

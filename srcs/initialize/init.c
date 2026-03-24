@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init_exec.c                                        :+:      :+:    :+:   */
+/*   init.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/24 11:51:26 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/24 11:56:12 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/02 19:10:30 by ccastro           #+#    #+#             */
+/*   Updated: 2026/03/24 13:16:24 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <utils.h>
+#include <initialize.h>
 
-void	init_img(t_img *img)
+void	init_data(t_data *data)
 {
-	img->img = NULL;
-	img->addr = NULL;
-	img->bpp = 0;
-	img->line_length = 0;
-	img->endian = 0;
-	img->width = 0;
-	img->height = 0;
-}
+	int	i;
 
-void	init_mlx(t_mlx *mlx)
-{
-	mlx->ptr = NULL;
-	mlx->win = NULL;
-	init_img(&mlx->screen);
+	init_tex(&data->tex);
+	init_map(&data->map);
+	init_player(&data->player);
+	init_file(&data->file);
+	init_mlx(&data->mlx);
+	i = 0;
+	while (i < TEX_COUNT)
+	{
+		init_img(&data->textures[i]);
+		i++;
+	}
 }

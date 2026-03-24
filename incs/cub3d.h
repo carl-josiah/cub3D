@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/23 14:23:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/24 12:05:48 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/24 13:18:01 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@
 
 # include <debug.h>
 # include <libft.h>
-# include <parsing.h>
+# include <parse.h>
 # include <cleanup.h>
-# include <utils.h>
+# include <initialize.h>
 # include <structs.h>
 # include <defines.h>
-# include <execution.h>
+# include <execute.h>
 
 #endif

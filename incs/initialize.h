@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   id_error.c                                         :+:      :+:    :+:   */
+/*   initialize.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/29 13:09:37 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/11 17:41:15 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/02 19:18:15 by ccastro           #+#    #+#             */
+/*   Updated: 2026/03/24 13:17:31 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <cleanup.h>
+#ifndef INITIALIZE_H
+# define INITIALIZE_H
 
-void	throw_id_error(int id, t_data *data)
-{
-	if (id == -1)
-		exit_error(data, "Invalid texture identifier", NULL, NL);
-	else if (id == 0)
-		return ;
-	else if ((id & data->tex.mask) && id & TEX_DIR)
-		exit_error(data, "Duplicate texture identifier", NULL, NL);
-	else if ((id & data->tex.mask) && id & TEX_COLOR)
-		exit_error(data, "Duplicate color identifier", NULL, NL);
-}
+# include <structs.h>
+
+void					init_tex(t_tex *tex);
+void					init_map(t_map *map);
+void					init_player(t_player *player);
+void					init_file(t_file *file);
+void					init_img(t_img *img);
+void					init_mlx(t_mlx *mlx);
+void					init_data(t_data *data);
+
+#endif

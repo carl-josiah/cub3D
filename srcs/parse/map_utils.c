@@ -6,11 +6,11 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 17:03:49 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/23 17:41:29 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/24 13:15:01 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <parsing.h>
+#include <parse.h>
 
 int	count_map_height(char **line)
 {

@@ -6,11 +6,11 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 14:33:12 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/19 23:39:38 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/24 13:20:44 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <parsing.h>
+#include <parse.h>
 
 void	forbid_garbage(char *ptr, char *line)
 {
@@ -22,11 +22,6 @@ void	forbid_garbage(char *ptr, char *line)
 		ptr++;
 	if (!*ptr)
 		exit_error(NULL, INVALID_COLOR, line, NO_NL);
-}
-
-int	rgb_to_int(int r, int g, int b)
-{
-	return ((r << 16) | (g << 8) | (b));
 }
 
 static t_tex_status	acquire_tex(int id, char *line, t_tex *tex)
@@ -74,4 +69,32 @@ void	skip_white_spaces(char **line, int skip)
 	}
 	while (**line && ft_strchr(SPACES, **line))
 		(*line)++;
+}
+
+int	parse_rgb_channel(char *ptr, int *rgb, int i)
+{
+	char	*start;
+
+	start = ptr;
+	if (!ft_isdigit(*ptr))
+		return (0);
+	while (ft_isdigit(*ptr))
+		ptr++;
+	if (i < 2)
+	{
+		if (*ptr && *ptr != ',')
+			return (0);
+	}
+	else if (i == 2)
+	{
+		while (ft_isspace(*ptr))
+			ptr++;
+		if (*ptr && !ft_isspace(*ptr))
+			return (0);
+	}
+	if (!ft_atoi_safe(start, &rgb[i]))
+		return (0);
+	if (rgb[i] < 0 || rgb[i] > 255)
+		return (0);
+	return (1);
 }

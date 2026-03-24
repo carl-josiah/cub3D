@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parsing.h                                          :+:      :+:    :+:   */
+/*   parse.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 10:25:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/19 23:38:46 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/24 13:16:49 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PARSING_H
-# define PARSING_H
+#ifndef PARSE_H
+# define PARSE_H
 
 # include <fcntl.h>
 # include <unistd.h>
@@ -24,7 +24,7 @@
 # include <defines.h>
 # include <structs.h>
 # include <cleanup.h>
-# include <utils.h>
+# include <initialize.h>
 # include <debug.h>
 
 void					args_validation(int ac, char **av);
@@ -35,11 +35,10 @@ char					**read_cub_file(const char *cub_file, size_t *lc);
 void					parse_file(char **lines, t_data *data);
 void					skip_white_spaces(char **line, int skip);
 void					throw_id_error(int id, t_tex *tex);
-int						rgb_to_int(int r, int g, int b);
 void					forbid_garbage(char *ptr, char *line);
 void					store_map_line(char *map_line, t_data *data);
 int						count_map_height(char **line);
-int						error_check(char *ptr, int *rgb, int i);
+int						parse_rgb_channel(char *ptr, int *rgb, int i);
 void					validate_map(char **grid, t_data *data);
 int						count_directions(char **grid, int height);
 int						count_map_height(char **line);

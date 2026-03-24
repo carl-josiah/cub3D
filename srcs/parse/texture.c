@@ -6,11 +6,11 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:53:40 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/19 23:40:25 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/24 13:15:14 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <parsing.h>
+#include <parse.h>
 
 static void	validate_line_argc(char *line)
 {
@@ -33,7 +33,7 @@ static void	extract_color(char *line, int *rgb)
 	skip_white_spaces(&ptr, 1);
 	while (i < 3)
 	{
-		if (!error_check(ptr, rgb, i))
+		if (!parse_rgb_channel(ptr, rgb, i))
 			exit_error(NULL, INVALID_COLOR, line, NO_NL);
 		ptr += ft_strcspn(ptr, ",");
 		if (i < 2)
@@ -98,8 +98,8 @@ void	parse_color(int id, char *line, t_tex *tex)
 
 	extract_color(line, rgb);
 	if (id == TEX_F)
-		tex->f = rgb_to_int(rgb[0], rgb[1], rgb[2]);
+		tex->f = (rgb[0] << 16) | (rgb[1] << 8) | rgb[2];
 	else if (id == TEX_C)
-		tex->c = rgb_to_int(rgb[0], rgb[1], rgb[2]);
+		tex->c = (rgb[0] << 16) | (rgb[1] << 8) | rgb[2];
 	tex->mask |= id;
 }

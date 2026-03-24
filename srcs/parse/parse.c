@@ -6,11 +6,11 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 12:03:27 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/24 12:17:15 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/24 13:14:24 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <parsing.h>
+#include <parse.h>
 
 static void	handle_config(char *line, t_data *data, int *id, t_state *state)
 {

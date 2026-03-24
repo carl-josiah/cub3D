@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:46:29 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/24 12:17:05 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/24 12:50:32 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,5 +54,10 @@
 # define MAP_ERROR_DIR "Must Have One Direction Inside Map"
 # define MAP_INVALID_CHARS "Invalid Characters Inside Map"
 # define MAP_NOT_CLOSED "Map Is Not Closed"
+
+# define WIN_WIDTH 1024
+# define WIN_HEIGHT 1024
+# define ERROR_MLX_INIT "MLX initialization failed"
+# define CUB3D "cub3D"
 
 #endif
