@@ -1,26 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.h                                            :+:      :+:    :+:   */
+/*   mlx.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/02 19:18:15 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/24 11:56:02 by ccastro          ###   ########.fr       */
+/*   Created: 2026/03/24 12:07:44 by ccastro           #+#    #+#             */
+/*   Updated: 2026/03/24 12:12:59 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef UTILS_H
-# define UTILS_H
-
-# include <structs.h>
-
-void					init_tex(t_tex *tex);
-void					init_map(t_map *map);
-void					init_player(t_player *player);
-void					init_file(t_file *file);
-void					init_img(t_img *img);
-void					init_mlx(t_mlx *mlx);
-void					init_data(t_data *data);
-
-#endif
+#include <execution.h>

@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:20:02 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/11 18:42:46 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/23 18:01:37 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,13 @@ typedef enum e_tex_status
 	TEX_SPACES = 5
 }	t_tex_status;
 
-// create enum to check whether there is NSWE already present
+typedef enum e_texture_idx
+{
+	NORTH = 0,
+	SOUTH = 1,
+	EAST = 2,
+	WEST = 3,
+	TEX_COUNT = 4
+}	t_texture_idx;
 
 #endif

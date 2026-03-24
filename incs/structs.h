@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:44:10 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/11 23:04:36 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/24 11:42:41 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,12 @@ typedef struct s_map
 
 typedef struct s_player
 {
-	int		x;
-	int		y;
-	char	dir;
+	double	x;
+	double	y;
+	double	dir_x;
+	double	dir_y;
+	double	plane_x;
+	double	plane_y;
 }			t_player;
 
 typedef struct s_file
@@ -49,13 +52,32 @@ typedef struct s_file
 	char	*map_line;
 }			t_file;
 
+typedef struct s_img
+{
+	void	*img;
+	char	*addr;
+	int		bpp;
+	int		line_length;
+	int		endian;
+	int		width;
+	int		height;
+}			t_img;
+
+typedef struct s_mlx
+{
+	void	*ptr;
+	void	*win;
+	t_img	screen;
+}			t_mlx;
+
 typedef struct s_data
 {
 	t_tex		tex;
 	t_map		map;
 	t_player	player;
 	t_file		file;
-	// t_mlx
+	t_mlx		mlx;
+	t_img		textures[TEX_COUNT];
 }				t_data;
 
 #endif

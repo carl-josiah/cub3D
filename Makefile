@@ -6,7 +6,7 @@
 #    By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
-#    Updated: 2026/03/18 20:47:48 by ccastro          ###   ########.fr        #
+#    Updated: 2026/03/24 12:15:12 by ccastro          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ SRCS_DIR				:= srcs
 OBJS_DIR				:= objs
 
 PARSING_DIR				:= parsing
+EXECUTION_DIR			:= execution
 CLEANUP_DIR				:= cleanup
 UTILS_DIR				:= utils
 DEBUG_DIR				:= debug
@@ -41,8 +42,9 @@ CFLAGS					+= -I$(MLX_DIR) -Iincs -I$(LIBFT_DIR)/incs
 
 MAIN					:= cub3d.c
 PARSING_SRCS			:= validate.c texture.c texture_utils.c read.c parse.c map.c map_utils.c
+EXECUTION_SRCS			:= mlx.c
 CLEANUP_SRCS			:= exit_error.c free.c col_error.c dir_error.c id_error.c error_check.c
-UTILS_SRCS				:= initialize.c
+UTILS_SRCS				:= init_parse.c init_exec.c init.c
 DEBUG_SRCS				:= print.c
 
 ALL_SRCS				:= $(MAIN) \
@@ -50,7 +52,7 @@ ALL_SRCS				:= $(MAIN) \
 						   $(addprefix $(CLEANUP_DIR)/, $(CLEANUP_SRCS)) \
 						   $(addprefix $(UTILS_DIR)/, $(UTILS_SRCS)) \
 						   $(addprefix $(DEBUG_DIR)/, $(DEBUG_SRCS)) \
-						   # $(addprefix $(EXECUTION_DIR)/, $(EXECUTION_SRCS)) \
+						   $(addprefix $(EXECUTION_DIR)/, $(EXECUTION_SRCS)) \
 
 SRCS					:= $(addprefix $(SRCS_DIR)/, $(ALL_SRCS))
 OBJS					:= $(patsubst $(SRCS_DIR)/%.c, $(OBJS_DIR)/%.o, $(SRCS))
