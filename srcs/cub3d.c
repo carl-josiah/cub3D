@@ -6,7 +6,7 @@
 /*   By: carljosiah <carljosiah@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/23 14:22:36 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/24 13:18:35 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/08 19:07:31 by carljosiah       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,6 @@ int	main(int ac, char **av)
 	if (!data.file.lines)
 		exit_error(&data, MALLOC, NULL, NL);
 	parse_file(data.file.lines, &data);
-	// start_mlx(&data);
-	// render(&data);
-	// setup_hooks(&data);
-	// mlx_loop(data.mlx);
 	free_all(data.file.lines, &data);
 	return (EXIT_SUCCESS);
 }

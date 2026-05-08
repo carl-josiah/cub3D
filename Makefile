@@ -6,7 +6,7 @@
 #    By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
-#    Updated: 2026/03/24 13:13:00 by ccastro          ###   ########.fr        #
+#    Updated: 2026/05/08 19:09:26 by carljosiah       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ DEBUG_DIR				:= debug
 UNAME					:= $(shell uname -s)
 
 ifeq ($(UNAME), Darwin)
-    MLX_DIR				:= minilibx_opengl_20191021
+    MLX_DIR				:= minilibx_darwin
     MLX_LIB				:= $(MLX_DIR)/libmlx.a
     MLX_FLAGS			:= -L$(MLX_DIR) -lmlx -framework OpenGL -framework AppKit
 else
