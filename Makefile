@@ -6,13 +6,13 @@
 #    By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
-#    Updated: 2026/05/08 19:09:26 by carljosiah       ###   ########.fr        #
+#    Updated: 2026/05/09 10:01:06 by ccastro          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME					:= cub3D
 CC						:= cc
-CFLAGS					:= -g3 -Wall -Wextra -Werror
+CFLAGS					:= # -Wall -Wextra -Werror
 
 LIBFT_DIR				:= libft-custom
 LIBFT					:= $(LIBFT_DIR)/libft.a
