@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 09:58:56 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/12 09:52:21 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/12 16:33:23 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,7 @@ int	main(int ac, char **av)
 	if (!data.file.lines)
 		exit_error(&data, MALLOC, NULL, NL);
 	parse_file(data.file.lines, &data);
-	open_window(&data);
-	event_handlers(&data);
-	mlx_loop(data.mlx.ptr);
-	free_and_destroy(&data);
+	launch_game(&data);
+	free_all(data.file.lines, &data);
 	return (EXIT_SUCCESS);
 }

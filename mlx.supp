@@ -1,9 +1,10 @@
 {
    mlx_supp
    Memcheck:Leak
-   match-leak-kinds: definite
+   match-leak-kinds: reachable
    fun:malloc
    fun:mlx_init
    fun:open_window
+   fun:launch_game
    fun:main
 }

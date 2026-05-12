@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:25:28 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/12 09:43:23 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/12 16:27:58 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ void	throw_direction_error(t_data *data);
 void	free_grid(char **grid, int height);
 void	free_map(t_data *data);
 void	free_all(char **lines, t_data *data);
-void	free_and_destroy(t_data *data);
+void	free_mlx(t_data *data);
 
 #endif

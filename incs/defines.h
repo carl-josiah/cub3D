@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:46:29 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/11 19:37:05 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/12 16:11:58 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,9 @@
 # define WIN_HEIGHT 400
 # define ERROR_MLX_INIT "MLX initialization failed"
 # define ERROR_MLX_WIN "MLX window failed"
+# define ERROR_MLX_SCREEN_IMG "MLX screen image failed"
+# define ERROR_MLX_SCREEN_ADDR "MLX screen address failed"
+# define ERROR_MLX_TEXTURE "MLX load texture failed"
 # define CUB3D "cub3D"
 
 // keycodes
@@ -68,5 +71,6 @@
 # else
 #  define ESC_KEY 53
 # endif
+# define DESTROY_NOTIFY 17
 
 #endif

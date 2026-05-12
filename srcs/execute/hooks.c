@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 19:35:31 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/12 07:49:04 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/12 16:28:17 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,25 @@
 
 static void	close_game(t_data *data)
 {
-	free_and_destroy(data);
+	free_all(data->file.lines, data);
 	exit(EXIT_SUCCESS);
 }
 
-static int	handle_key_press(int keycode, t_data *data)
+static int	on_key_press(int keycode, t_data *data)
 {
 	if (keycode == ESC_KEY)
 		close_game(data);
 	return (0);
 }
 
-int	event_handlers(t_data *data)
+static int	on_window_close(t_data *data)
 {
-	mlx_key_hook(data->mlx.win, handle_key_press, data);
-	// mlx_hook(data->mlx.win, 17, 0, close_hook, data);
+	close_game(data);
 	return (0);
+}
+
+void	event_handlers(t_data *data)
+{
+	mlx_key_hook(data->mlx.win, on_key_press, data);
+	mlx_hook(data->mlx.win, DESTROY_NOTIFY, 0, on_window_close, data);
 }

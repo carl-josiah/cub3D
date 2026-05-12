@@ -1,24 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   debug.h                                            :+:      :+:    :+:   */
+/*   free_all.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/04 16:05:31 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/12 16:42:26 by ccastro          ###   ########.fr       */
+/*   Created: 2026/05/12 16:29:45 by ccastro           #+#    #+#             */
+/*   Updated: 2026/05/12 16:30:50 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DEBUG_H
-# define DEBUG_H
+#include <cleanup.h>
 
-# include <fcntl.h>
-# include <libft.h>
-# include <structs.h>
-
-int		print_for_me(const char *path);
-void	print_grid(char **grid, int height);
-void	print_texture_paths(t_data *data);
-
-#endif
+void	free_all(char **lines, t_data *data)
+{
+	free_double_ptr(lines);
+	free_textures(&data->tex);
+	free_map(data);
+	free_mlx(data);
+}

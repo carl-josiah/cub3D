@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 16:07:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/16 18:38:12 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/12 16:42:30 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,12 @@ void	print_grid(char **grid, int height)
 		printf("row[%i]: %s\n", i, grid[i]);
 		i++;
 	}
+}
+
+void	print_texture_paths(t_data *data)
+{
+	printf("tex[0]: %s\n", data->tex.no);
+	printf("tex[1]: %s\n", data->tex.so);
+	printf("tex[2]: %s\n", data->tex.we);
+	printf("tex[3]: %s\n", data->tex.ea);
 }
