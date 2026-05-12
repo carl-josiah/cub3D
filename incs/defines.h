@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:46:29 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/24 12:50:32 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/11 19:37:05 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,18 @@
 # define MAP_INVALID_CHARS "Invalid Characters Inside Map"
 # define MAP_NOT_CLOSED "Map Is Not Closed"
 
-# define WIN_WIDTH 1024
-# define WIN_HEIGHT 1024
+# define WIN_WIDTH 400
+# define WIN_HEIGHT 400
 # define ERROR_MLX_INIT "MLX initialization failed"
+# define ERROR_MLX_WIN "MLX window failed"
 # define CUB3D "cub3D"
+
+// keycodes
+# ifdef __linux__
+#  include <X11/keysym.h>
+#  define ESC_KEY XK_Escape
+# else
+#  define ESC_KEY 53
+# endif
 
 #endif

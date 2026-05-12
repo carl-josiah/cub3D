@@ -6,7 +6,7 @@
 #    By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
-#    Updated: 2026/05/09 10:01:06 by ccastro          ###   ########.fr        #
+#    Updated: 2026/05/12 00:38:03 by ccastro          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,8 +42,8 @@ CFLAGS					+= -I$(MLX_DIR) -Iincs -I$(LIBFT_DIR)/incs
 
 MAIN					:= cub3d.c
 PARSE_SRCS				:= validate.c texture.c texture_utils.c read.c parse.c map.c map_utils.c
-EXECUTE_SRCS			:= mlx.c
-CLEANUP_SRCS			:= parse_errors.c exit_error.c free.c
+EXECUTE_SRCS			:= execute.c hooks.c mlx.c movement.c render.c
+CLEANUP_SRCS			:= parse_errors.c exit_error.c free.c cleanup.c
 INITIALIZE_SRCS			:= init_parse.c init_exec.c init.c
 DEBUG_SRCS				:= print.c
 

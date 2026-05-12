@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.c                                            :+:      :+:    :+:   */
+/*   hooks.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/09 09:58:56 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/12 09:52:21 by ccastro          ###   ########.fr       */
+/*   Created: 2026/05/11 19:35:31 by ccastro           #+#    #+#             */
+/*   Updated: 2026/05/12 07:49:04 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <cub3d.h>
+#include <execute.h>
 
-int	main(int ac, char **av)
+static void	close_game(t_data *data)
 {
-	t_data	data;
-	size_t	line_count;
+	free_and_destroy(data);
+	exit(EXIT_SUCCESS);
+}
 
-	args_validation(ac, av);
-	init_data(&data);
-	data.file.lines = read_cub_file(av[1], &line_count);
-	if (!data.file.lines)
-		exit_error(&data, MALLOC, NULL, NL);
-	parse_file(data.file.lines, &data);
-	open_window(&data);
-	event_handlers(&data);
-	mlx_loop(data.mlx.ptr);
-	free_and_destroy(&data);
-	return (EXIT_SUCCESS);
+static int	handle_key_press(int keycode, t_data *data)
+{
+	if (keycode == ESC_KEY)
+		close_game(data);
+	return (0);
+}
+
+int	event_handlers(t_data *data)
+{
+	mlx_key_hook(data->mlx.win, handle_key_press, data);
+	// mlx_hook(data->mlx.win, 17, 0, close_hook, data);
+	return (0);
 }

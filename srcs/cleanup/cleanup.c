@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.c                                            :+:      :+:    :+:   */
+/*   cleanup.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/09 09:58:56 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/12 09:52:21 by ccastro          ###   ########.fr       */
+/*   Created: 2026/05/12 09:30:45 by ccastro           #+#    #+#             */
+/*   Updated: 2026/05/12 09:43:07 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <cub3d.h>
+#include <cleanup.h>
 
-int	main(int ac, char **av)
+void	free_and_destroy(t_data *data)
 {
-	t_data	data;
-	size_t	line_count;
-
-	args_validation(ac, av);
-	init_data(&data);
-	data.file.lines = read_cub_file(av[1], &line_count);
-	if (!data.file.lines)
-		exit_error(&data, MALLOC, NULL, NL);
-	parse_file(data.file.lines, &data);
-	open_window(&data);
-	event_handlers(&data);
-	mlx_loop(data.mlx.ptr);
-	free_and_destroy(&data);
-	return (EXIT_SUCCESS);
+	free_all(data->file.lines, data);
+	// add mlx_destroy_image if you done it
+	if (data->mlx.win)
+		mlx_destroy_window(data->mlx.ptr, data->mlx.win);
+	if (data->mlx.ptr)
+		mlx_destroy_display(data->mlx.ptr);
 }

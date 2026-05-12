@@ -1,0 +1,9 @@
+{
+   mlx_supp
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   fun:mlx_init
+   fun:open_window
+   fun:main
+}

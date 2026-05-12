@@ -1,9 +1,18 @@
 CompileFlags:
-  Add: 
-    - "-I/Users/carljosiah/Documents/clang/42-Cursus/cub3D/incs"
-    - "-I/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom/incs"
-    - "-I/Users/carljosiah/Documents/clang/42-Cursus/cub3D/minilibx-linux"
-    - "-I/Users/carljosiah/Documents/clang/42-Cursus/cub3D/minilibx-opengl"
+  Add:
+    # for mac
+    # - "-I/Users/carljosiah/Documents/clang/42-Cursus/cub3D/incs"
+    # - "-I/Users/carljosiah/Documents/clang/42-Cursus/cub3D/libft-custom/incs"
+    # - "-I/Users/carljosiah/Documents/clang/42-Cursus/cub3D/minilibx-linux"
+    # - "-I/Users/carljosiah/Documents/clang/42-Cursus/cub3D/minilibx-darwin"
+
+    # for ubuntu
+    - "-I/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/incs"
+    - "-I/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom/incs"
+    - "-I/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/minilibx-linux"
+    - "-I/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/minilibx-darwin"
+
+    # usual flags
     - "-Wall"
     - "-Wextra"
     - "-Werror"

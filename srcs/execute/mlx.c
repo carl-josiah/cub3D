@@ -11,3 +11,13 @@
 /* ************************************************************************** */
 
 #include <execute.h>
+
+void	open_window(t_data *data)
+{
+	data->mlx.ptr = mlx_init();
+	if (!data->mlx.ptr)
+		exit_error(data, ERROR_MLX_INIT, NULL, NL);
+	data->mlx.win = mlx_new_window(data->mlx.ptr, WIN_WIDTH, WIN_HEIGHT, CUB3D);
+	if (!data->mlx.win)
+		exit_error(data, ERROR_MLX_WIN, NULL, NL);
+}
