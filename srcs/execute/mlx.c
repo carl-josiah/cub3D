@@ -34,9 +34,9 @@ void	create_image(t_data *data)
 		exit_error(data, ERROR_MLX_SCREEN_ADDR, NULL, NL);
 }
 
-void	load_one_texture(t_data *data, t_img *tex, char *path)
+void	load_one_texture(t_data *data, t_img *tex, char *file_name)
 {
-	tex->img = mlx_xpm_file_to_image(data->mlx.ptr, path, &tex->width,
+	tex->img = mlx_xpm_file_to_image(data->mlx.ptr, file_name, &tex->width,
 			&tex->height);
 	if (!tex->img)
 		exit_error(data, ERROR_MLX_TEXTURE, NULL, NL);

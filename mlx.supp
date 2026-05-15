@@ -1,5 +1,36 @@
 {
-   mlx_supp
+   mlx_xpm_reachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:mlx_int_new_xshm_image
+   fun:mlx_new_image
+   fun:mlx_int_parse_xpm
+   fun:mlx_xpm_file_to_image
+   fun:load_one_texture
+   fun:load_textures
+   fun:launch_game
+   fun:main
+}
+
+{
+   mlx_xshm_reachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XShmCreateImage
+   fun:mlx_int_new_xshm_image
+   fun:mlx_new_image
+   fun:mlx_int_parse_xpm
+   fun:mlx_xpm_file_to_image
+   fun:load_one_texture
+   fun:load_textures
+   fun:launch_game
+   fun:main
+}
+
+{
+   mlx_init_reachable
    Memcheck:Leak
    match-leak-kinds: reachable
    fun:malloc
