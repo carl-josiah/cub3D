@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <cleanup.h>
+#include "cleanup.h"
 
 void	free_all(char **lines, t_data *data)
 {

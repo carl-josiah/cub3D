@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <cleanup.h>
+#include "cleanup.h"
 
 void	throw_direction_error(t_data *data)
 {

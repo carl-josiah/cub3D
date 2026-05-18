@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <parse.h>
+#include "parse.h"
 
 void	forbid_garbage(char *ptr, char *line)
 {

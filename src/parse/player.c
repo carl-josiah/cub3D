@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <parse.h>
+#include "parse.h"
 
 static int	valid_direction(t_map *map, int x, int y)
 {

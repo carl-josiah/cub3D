@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <parse.h>
+#include "parse.h"
 
 int	count_map_height(char **line)
 {
@@ -37,8 +37,8 @@ int	count_directions(char **grid, int height)
 		j = 0;
 		while (grid[i][j])
 		{
-			if (grid[i][j] == 'N' || grid[i][j] == 'S' ||
-				grid[i][j] == 'E' || grid[i][j] == 'W')
+			if (grid[i][j] == 'N' || grid[i][j] == 'S' || grid[i][j] == 'E'
+				|| grid[i][j] == 'W')
 				count++;
 			j++;
 		}

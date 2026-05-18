@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <parse.h>
+#include "parse.h"
 
 static void	validate_line_argc(char *line)
 {

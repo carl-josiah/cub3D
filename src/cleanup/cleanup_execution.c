@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <cleanup.h>
+#include "cleanup.h"
 
 void	free_mlx(t_data *data)
 {

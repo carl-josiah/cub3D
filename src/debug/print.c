@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <debug.h>
+#include "debug.h"
 
 int	print_for_me(const char *path)
 {

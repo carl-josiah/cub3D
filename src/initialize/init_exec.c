@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <initialize.h>
+#include "initialize.h"
 
 void	init_img(t_img *img)
 {

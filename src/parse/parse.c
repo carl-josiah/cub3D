@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <parse.h>
+#include "parse.h"
 
 static void	handle_config(char *line, t_data *data, int *id, t_state *state)
 {

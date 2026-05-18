@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <initialize.h>
+#include "initialize.h"
 
 void	init_tex(t_tex *tex)
 {
