@@ -12,12 +12,26 @@
 
 #include "execute.h"
 
+/**
+ * @brief Free and destroy everything and terminate the program.
+ *
+ * @param data Contains all the structs to free.
+ * @return void haha
+ */
 static void	close_game(t_data *data)
 {
 	free_all(data->file.lines, data);
 	exit(EXIT_SUCCESS);
 }
 
+/**
+ * @brief Callback function that identify keycodes.
+ *
+ * @param keycode The code of the key pressed.
+ * @param data The struct to pass to the function called.
+ *
+ * @return int Returns a number due to mlx_key_hook() implementation
+ */
 static int	on_key_press(int keycode, t_data *data)
 {
 	if (keycode == ESC_KEY)
@@ -25,6 +39,12 @@ static int	on_key_press(int keycode, t_data *data)
 	return (0);
 }
 
+/**
+ * @brief Callback function that identify the window close event.
+ *
+ * @param data Pass data struct
+ * @return int Returns a number due to mlx_hook() implementation
+ */
 static int	on_window_close(t_data *data)
 {
 	close_game(data);

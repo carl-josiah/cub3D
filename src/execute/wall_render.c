@@ -12,6 +12,18 @@
 
 #include "execute.h"
 
+/**
+ * @brief
+ * Find wall start and wall end.
+ * The purpose of this function is
+ * to make sure that the wall is in
+ * the middle of the floor
+ * and ceiling.
+ *
+ * @param line_height To determine the bounds and how tall the wall is.
+ *
+ * @return t_vec2i Return the bounds.
+ */
 static t_vec2i	get_draw_bounds(int line_height)
 {
 	t_vec2i	bounds;
@@ -25,6 +37,13 @@ static t_vec2i	get_draw_bounds(int line_height)
 	return (bounds);
 }
 
+/**
+ * @brief Find the position of where the ray hit the wall.
+ *
+ * @param ray Gather ray data to determine the position.
+ *
+ * @return double Return the position.
+ */
 static double	get_wall_x(t_ray *ray)
 {
 	if (ray->side == 0)
@@ -32,6 +51,14 @@ static double	get_wall_x(t_ray *ray)
 	return (ray->pos.x + ray->perp_wall_dist * ray->dir.x);
 }
 
+/**
+ * @brief Pick which column (x-axis) of the wall image to use.
+ *
+ * @param ray To compare side and dir structs to determine the column.
+ * @param tex To use texture width to determine the column.
+ *
+ * @return int To return the column of the wall texture to use.
+ */
 static int	get_tex_x(t_ray *ray, t_img *tex)
 {
 	double	wall_x;
@@ -46,6 +73,16 @@ static int	get_tex_x(t_ray *ray, t_img *tex)
 	return (tex_x);
 }
 
+/**
+ * @brief Pick which row of the wall image to use.
+ *
+ * @param y Current screen pixel.
+ * @param draw_start Where the wall begins.
+ * @param line_height To determine the height of the wall.
+ * @param tex Using tex height to determine the texture row to use.
+ *
+ * @return int To return the row of the wall texture to use.
+ */
 static int	get_tex_y(int y, int draw_start, int line_height, t_img *tex)
 {
 	int	tex_y;
@@ -66,7 +103,11 @@ void	draw_wall_column(t_data *data, t_ray *ray, int x)
 	int		tex_x;
 	int		y;
 
+	if (ray->perp_wall_dist <= 0)
+		return ;
 	line_height = (int)(WIN_HEIGHT / ray->perp_wall_dist);
+	if (line_height <= 0)
+		line_height = 1;
 	bounds = get_draw_bounds(line_height);
 	tex = get_wall_texture(data, ray);
 	tex_x = get_tex_x(ray, tex);

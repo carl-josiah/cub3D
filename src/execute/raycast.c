@@ -25,6 +25,14 @@ static void	compute_perp_wall_dist(t_ray *ray)
 		ray->perp_wall_dist = ray->dist.side_y - ray->dist.delta_y;
 }
 
+/**
+ * @brief Identify whether ray position is outside of map boundaries.
+ *
+ * @param data Check the map dimensions and grid.
+ * @param ray Check the ray's grid position against the map.
+ *
+ * @return int Return a number to signify whether it's outside the map.
+ */
 static int	is_outside_map(t_data *data, t_ray *ray)
 {
 	if (ray->grid.y < 0 || ray->grid.y >= data->map.height)

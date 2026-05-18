@@ -12,6 +12,12 @@
 
 #include "execute.h"
 
+/**
+ *
+ * @brief Fill the top and bottom portion of the screen.
+ *
+ * @param data Pass mlx and tex structures for pixel_put()
+ */
 static void	draw_background(t_data *data)
 {
 	int	x;

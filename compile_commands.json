@@ -1,7 +1,8 @@
 [
   {
+    "file": "srcs/char/ft_isalnum.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -9,17 +10,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/char/ft_isalnum.c",
       "-o",
-      "objs/srcs/char/ft_isalnum.o",
-      "srcs/char/ft_isalnum.c"
+      "objs/srcs/char/ft_isalnum.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/char/ft_isalnum.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/char/ft_isalnum.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_isalnum.o"
   },
   {
+    "file": "srcs/char/ft_isalpha.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -27,17 +28,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/char/ft_isalpha.c",
       "-o",
-      "objs/srcs/char/ft_isalpha.o",
-      "srcs/char/ft_isalpha.c"
+      "objs/srcs/char/ft_isalpha.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/char/ft_isalpha.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/char/ft_isalpha.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_isalpha.o"
   },
   {
+    "file": "srcs/char/ft_isascii.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -45,17 +46,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/char/ft_isascii.c",
       "-o",
-      "objs/srcs/char/ft_isascii.o",
-      "srcs/char/ft_isascii.c"
+      "objs/srcs/char/ft_isascii.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/char/ft_isascii.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/char/ft_isascii.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_isascii.o"
   },
   {
+    "file": "srcs/char/ft_isdigit.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -63,17 +64,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/char/ft_isdigit.c",
       "-o",
-      "objs/srcs/char/ft_isdigit.o",
-      "srcs/char/ft_isdigit.c"
+      "objs/srcs/char/ft_isdigit.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/char/ft_isdigit.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/char/ft_isdigit.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_isdigit.o"
   },
   {
+    "file": "srcs/char/ft_isprint.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -81,17 +82,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/char/ft_isprint.c",
       "-o",
-      "objs/srcs/char/ft_isprint.o",
-      "srcs/char/ft_isprint.c"
+      "objs/srcs/char/ft_isprint.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/char/ft_isprint.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/char/ft_isprint.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_isprint.o"
   },
   {
+    "file": "srcs/char/ft_isspace.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -99,17 +100,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/char/ft_isspace.c",
       "-o",
-      "objs/srcs/char/ft_isspace.o",
-      "srcs/char/ft_isspace.c"
+      "objs/srcs/char/ft_isspace.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/char/ft_isspace.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/char/ft_isspace.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_isspace.o"
   },
   {
+    "file": "srcs/char/ft_tolower.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -117,17 +118,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/char/ft_tolower.c",
       "-o",
-      "objs/srcs/char/ft_tolower.o",
-      "srcs/char/ft_tolower.c"
+      "objs/srcs/char/ft_tolower.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/char/ft_tolower.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/char/ft_tolower.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_tolower.o"
   },
   {
+    "file": "srcs/char/ft_toupper.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -135,17 +136,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/char/ft_toupper.c",
       "-o",
-      "objs/srcs/char/ft_toupper.o",
-      "srcs/char/ft_toupper.c"
+      "objs/srcs/char/ft_toupper.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/char/ft_toupper.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/char/ft_toupper.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/char/ft_toupper.o"
   },
   {
+    "file": "srcs/clean/ft_free_ptr.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -153,17 +154,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/clean/ft_free_ptr.c",
       "-o",
-      "objs/srcs/clean/ft_free_ptr.o",
-      "srcs/clean/ft_free_ptr.c"
+      "objs/srcs/clean/ft_free_ptr.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/clean/ft_free_ptr.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/clean/ft_free_ptr.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/clean/ft_free_ptr.o"
   },
   {
+    "file": "srcs/clean/ft_free_str_array.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -171,17 +172,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/clean/ft_free_str_array.c",
       "-o",
-      "objs/srcs/clean/ft_free_str_array.o",
-      "srcs/clean/ft_free_str_array.c"
+      "objs/srcs/clean/ft_free_str_array.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/clean/ft_free_str_array.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/clean/ft_free_str_array.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/clean/ft_free_str_array.o"
   },
   {
+    "file": "srcs/custom/ft_count_words.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -189,17 +190,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/custom/ft_count_words.c",
       "-o",
-      "objs/srcs/custom/ft_count_words.o",
-      "srcs/custom/ft_count_words.c"
+      "objs/srcs/custom/ft_count_words.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/custom/ft_count_words.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/custom/ft_count_words.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/custom/ft_count_words.o"
   },
   {
+    "file": "srcs/custom/ft_is_empty.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -207,17 +208,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/custom/ft_is_empty.c",
       "-o",
-      "objs/srcs/custom/ft_is_empty.o",
-      "srcs/custom/ft_is_empty.c"
+      "objs/srcs/custom/ft_is_empty.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/custom/ft_is_empty.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/custom/ft_is_empty.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/custom/ft_is_empty.o"
   },
   {
+    "file": "srcs/custom/ft_atoi_safe.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -225,17 +226,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/custom/ft_atoi_safe.c",
       "-o",
-      "objs/srcs/custom/ft_atoi_safe.o",
-      "srcs/custom/ft_atoi_safe.c"
+      "objs/srcs/custom/ft_atoi_safe.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/custom/ft_atoi_safe.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/custom/ft_atoi_safe.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/custom/ft_atoi_safe.o"
   },
   {
+    "file": "srcs/custom/ft_ischar.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -243,17 +244,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/custom/ft_ischar.c",
       "-o",
-      "objs/srcs/custom/ft_ischar.o",
-      "srcs/custom/ft_ischar.c"
+      "objs/srcs/custom/ft_ischar.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/custom/ft_ischar.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/custom/ft_ischar.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/custom/ft_ischar.o"
   },
   {
+    "file": "srcs/custom/ft_nbrlen.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -261,17 +262,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/custom/ft_nbrlen.c",
       "-o",
-      "objs/srcs/custom/ft_nbrlen.o",
-      "srcs/custom/ft_nbrlen.c"
+      "objs/srcs/custom/ft_nbrlen.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/custom/ft_nbrlen.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/custom/ft_nbrlen.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/custom/ft_nbrlen.o"
   },
   {
+    "file": "srcs/custom/ft_str_has_charset.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -279,17 +280,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/custom/ft_str_has_charset.c",
       "-o",
-      "objs/srcs/custom/ft_str_has_charset.o",
-      "srcs/custom/ft_str_has_charset.c"
+      "objs/srcs/custom/ft_str_has_charset.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/custom/ft_str_has_charset.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/custom/ft_str_has_charset.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/custom/ft_str_has_charset.o"
   },
   {
+    "file": "srcs/fd/ft_putchar_fd.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -297,17 +298,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/fd/ft_putchar_fd.c",
       "-o",
-      "objs/srcs/fd/ft_putchar_fd.o",
-      "srcs/fd/ft_putchar_fd.c"
+      "objs/srcs/fd/ft_putchar_fd.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/fd/ft_putchar_fd.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/fd/ft_putchar_fd.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/fd/ft_putchar_fd.o"
   },
   {
+    "file": "srcs/fd/ft_putendl_fd.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -315,17 +316,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/fd/ft_putendl_fd.c",
       "-o",
-      "objs/srcs/fd/ft_putendl_fd.o",
-      "srcs/fd/ft_putendl_fd.c"
+      "objs/srcs/fd/ft_putendl_fd.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/fd/ft_putendl_fd.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/fd/ft_putendl_fd.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/fd/ft_putendl_fd.o"
   },
   {
+    "file": "srcs/fd/ft_putnbr_fd.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -333,17 +334,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/fd/ft_putnbr_fd.c",
       "-o",
-      "objs/srcs/fd/ft_putnbr_fd.o",
-      "srcs/fd/ft_putnbr_fd.c"
+      "objs/srcs/fd/ft_putnbr_fd.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/fd/ft_putnbr_fd.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/fd/ft_putnbr_fd.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/fd/ft_putnbr_fd.o"
   },
   {
+    "file": "srcs/fd/ft_putstr_fd.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -351,17 +352,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/fd/ft_putstr_fd.c",
       "-o",
-      "objs/srcs/fd/ft_putstr_fd.o",
-      "srcs/fd/ft_putstr_fd.c"
+      "objs/srcs/fd/ft_putstr_fd.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/fd/ft_putstr_fd.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/fd/ft_putstr_fd.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/fd/ft_putstr_fd.o"
   },
   {
+    "file": "srcs/list/ft_lstadd_back.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -369,17 +370,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/list/ft_lstadd_back.c",
       "-o",
-      "objs/srcs/list/ft_lstadd_back.o",
-      "srcs/list/ft_lstadd_back.c"
+      "objs/srcs/list/ft_lstadd_back.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/list/ft_lstadd_back.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/list/ft_lstadd_back.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstadd_back.o"
   },
   {
+    "file": "srcs/list/ft_lstadd_front.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -387,17 +388,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/list/ft_lstadd_front.c",
       "-o",
-      "objs/srcs/list/ft_lstadd_front.o",
-      "srcs/list/ft_lstadd_front.c"
+      "objs/srcs/list/ft_lstadd_front.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/list/ft_lstadd_front.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/list/ft_lstadd_front.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstadd_front.o"
   },
   {
+    "file": "srcs/list/ft_lstclear.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -405,17 +406,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/list/ft_lstclear.c",
       "-o",
-      "objs/srcs/list/ft_lstclear.o",
-      "srcs/list/ft_lstclear.c"
+      "objs/srcs/list/ft_lstclear.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/list/ft_lstclear.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/list/ft_lstclear.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstclear.o"
   },
   {
+    "file": "srcs/list/ft_lstdelone.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -423,17 +424,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/list/ft_lstdelone.c",
       "-o",
-      "objs/srcs/list/ft_lstdelone.o",
-      "srcs/list/ft_lstdelone.c"
+      "objs/srcs/list/ft_lstdelone.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/list/ft_lstdelone.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/list/ft_lstdelone.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstdelone.o"
   },
   {
+    "file": "srcs/list/ft_lstiter.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -441,17 +442,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/list/ft_lstiter.c",
       "-o",
-      "objs/srcs/list/ft_lstiter.o",
-      "srcs/list/ft_lstiter.c"
+      "objs/srcs/list/ft_lstiter.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/list/ft_lstiter.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/list/ft_lstiter.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstiter.o"
   },
   {
+    "file": "srcs/list/ft_lstlast.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -459,17 +460,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/list/ft_lstlast.c",
       "-o",
-      "objs/srcs/list/ft_lstlast.o",
-      "srcs/list/ft_lstlast.c"
+      "objs/srcs/list/ft_lstlast.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/list/ft_lstlast.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/list/ft_lstlast.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstlast.o"
   },
   {
+    "file": "srcs/list/ft_lstmap.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -477,17 +478,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/list/ft_lstmap.c",
       "-o",
-      "objs/srcs/list/ft_lstmap.o",
-      "srcs/list/ft_lstmap.c"
+      "objs/srcs/list/ft_lstmap.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/list/ft_lstmap.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/list/ft_lstmap.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstmap.o"
   },
   {
+    "file": "srcs/list/ft_lstnew.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -495,17 +496,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/list/ft_lstnew.c",
       "-o",
-      "objs/srcs/list/ft_lstnew.o",
-      "srcs/list/ft_lstnew.c"
+      "objs/srcs/list/ft_lstnew.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/list/ft_lstnew.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/list/ft_lstnew.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstnew.o"
   },
   {
+    "file": "srcs/list/ft_lstsize.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -513,17 +514,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/list/ft_lstsize.c",
       "-o",
-      "objs/srcs/list/ft_lstsize.o",
-      "srcs/list/ft_lstsize.c"
+      "objs/srcs/list/ft_lstsize.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/list/ft_lstsize.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/list/ft_lstsize.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/list/ft_lstsize.o"
   },
   {
+    "file": "srcs/mem/ft_bzero.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -531,17 +532,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/mem/ft_bzero.c",
       "-o",
-      "objs/srcs/mem/ft_bzero.o",
-      "srcs/mem/ft_bzero.c"
+      "objs/srcs/mem/ft_bzero.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/mem/ft_bzero.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/mem/ft_bzero.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_bzero.o"
   },
   {
+    "file": "srcs/mem/ft_calloc.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -549,17 +550,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/mem/ft_calloc.c",
       "-o",
-      "objs/srcs/mem/ft_calloc.o",
-      "srcs/mem/ft_calloc.c"
+      "objs/srcs/mem/ft_calloc.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/mem/ft_calloc.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/mem/ft_calloc.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_calloc.o"
   },
   {
+    "file": "srcs/mem/ft_memchr.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -567,17 +568,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/mem/ft_memchr.c",
       "-o",
-      "objs/srcs/mem/ft_memchr.o",
-      "srcs/mem/ft_memchr.c"
+      "objs/srcs/mem/ft_memchr.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/mem/ft_memchr.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/mem/ft_memchr.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_memchr.o"
   },
   {
+    "file": "srcs/mem/ft_memcmp.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -585,17 +586,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/mem/ft_memcmp.c",
       "-o",
-      "objs/srcs/mem/ft_memcmp.o",
-      "srcs/mem/ft_memcmp.c"
+      "objs/srcs/mem/ft_memcmp.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/mem/ft_memcmp.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/mem/ft_memcmp.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_memcmp.o"
   },
   {
+    "file": "srcs/mem/ft_memcpy.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -603,17 +604,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/mem/ft_memcpy.c",
       "-o",
-      "objs/srcs/mem/ft_memcpy.o",
-      "srcs/mem/ft_memcpy.c"
+      "objs/srcs/mem/ft_memcpy.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/mem/ft_memcpy.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/mem/ft_memcpy.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_memcpy.o"
   },
   {
+    "file": "srcs/mem/ft_memmove.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -621,17 +622,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/mem/ft_memmove.c",
       "-o",
-      "objs/srcs/mem/ft_memmove.o",
-      "srcs/mem/ft_memmove.c"
+      "objs/srcs/mem/ft_memmove.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/mem/ft_memmove.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/mem/ft_memmove.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_memmove.o"
   },
   {
+    "file": "srcs/mem/ft_memset.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -639,17 +640,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/mem/ft_memset.c",
       "-o",
-      "objs/srcs/mem/ft_memset.o",
-      "srcs/mem/ft_memset.c"
+      "objs/srcs/mem/ft_memset.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/mem/ft_memset.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/mem/ft_memset.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/mem/ft_memset.o"
   },
   {
+    "file": "srcs/misc/ft_atoi.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -657,17 +658,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/misc/ft_atoi.c",
       "-o",
-      "objs/srcs/misc/ft_atoi.o",
-      "srcs/misc/ft_atoi.c"
+      "objs/srcs/misc/ft_atoi.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/misc/ft_atoi.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/misc/ft_atoi.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/misc/ft_atoi.o"
   },
   {
+    "file": "srcs/str/ft_itoa.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -675,17 +676,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_itoa.c",
       "-o",
-      "objs/srcs/str/ft_itoa.o",
-      "srcs/str/ft_itoa.c"
+      "objs/srcs/str/ft_itoa.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_itoa.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_itoa.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_itoa.o"
   },
   {
+    "file": "srcs/str/ft_split.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -693,17 +694,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_split.c",
       "-o",
-      "objs/srcs/str/ft_split.o",
-      "srcs/str/ft_split.c"
+      "objs/srcs/str/ft_split.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_split.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_split.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_split.o"
   },
   {
+    "file": "srcs/str/ft_strchr.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -711,17 +712,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_strchr.c",
       "-o",
-      "objs/srcs/str/ft_strchr.o",
-      "srcs/str/ft_strchr.c"
+      "objs/srcs/str/ft_strchr.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_strchr.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_strchr.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strchr.o"
   },
   {
+    "file": "srcs/str/ft_strcspn.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -729,17 +730,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_strcspn.c",
       "-o",
-      "objs/srcs/str/ft_strcspn.o",
-      "srcs/str/ft_strcspn.c"
+      "objs/srcs/str/ft_strcspn.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_strcspn.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_strcspn.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strcspn.o"
   },
   {
+    "file": "srcs/str/ft_strdup.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -747,17 +748,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_strdup.c",
       "-o",
-      "objs/srcs/str/ft_strdup.o",
-      "srcs/str/ft_strdup.c"
+      "objs/srcs/str/ft_strdup.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_strdup.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_strdup.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strdup.o"
   },
   {
+    "file": "srcs/str/ft_striteri.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -765,17 +766,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_striteri.c",
       "-o",
-      "objs/srcs/str/ft_striteri.o",
-      "srcs/str/ft_striteri.c"
+      "objs/srcs/str/ft_striteri.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_striteri.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_striteri.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_striteri.o"
   },
   {
+    "file": "srcs/str/ft_strjoin.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -783,17 +784,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_strjoin.c",
       "-o",
-      "objs/srcs/str/ft_strjoin.o",
-      "srcs/str/ft_strjoin.c"
+      "objs/srcs/str/ft_strjoin.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_strjoin.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_strjoin.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strjoin.o"
   },
   {
+    "file": "srcs/str/ft_strlcat.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -801,17 +802,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_strlcat.c",
       "-o",
-      "objs/srcs/str/ft_strlcat.o",
-      "srcs/str/ft_strlcat.c"
+      "objs/srcs/str/ft_strlcat.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_strlcat.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_strlcat.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strlcat.o"
   },
   {
+    "file": "srcs/str/ft_strlcpy.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -819,17 +820,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_strlcpy.c",
       "-o",
-      "objs/srcs/str/ft_strlcpy.o",
-      "srcs/str/ft_strlcpy.c"
+      "objs/srcs/str/ft_strlcpy.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_strlcpy.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_strlcpy.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strlcpy.o"
   },
   {
+    "file": "srcs/str/ft_strlen.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -837,17 +838,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_strlen.c",
       "-o",
-      "objs/srcs/str/ft_strlen.o",
-      "srcs/str/ft_strlen.c"
+      "objs/srcs/str/ft_strlen.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_strlen.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_strlen.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strlen.o"
   },
   {
+    "file": "srcs/str/ft_strmapi.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -855,17 +856,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_strmapi.c",
       "-o",
-      "objs/srcs/str/ft_strmapi.o",
-      "srcs/str/ft_strmapi.c"
+      "objs/srcs/str/ft_strmapi.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_strmapi.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_strmapi.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strmapi.o"
   },
   {
+    "file": "srcs/str/ft_strncmp.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -873,17 +874,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_strncmp.c",
       "-o",
-      "objs/srcs/str/ft_strncmp.o",
-      "srcs/str/ft_strncmp.c"
+      "objs/srcs/str/ft_strncmp.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_strncmp.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_strncmp.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strncmp.o"
   },
   {
+    "file": "srcs/str/ft_strnstr.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -891,17 +892,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_strnstr.c",
       "-o",
-      "objs/srcs/str/ft_strnstr.o",
-      "srcs/str/ft_strnstr.c"
+      "objs/srcs/str/ft_strnstr.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_strnstr.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_strnstr.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strnstr.o"
   },
   {
+    "file": "srcs/str/ft_strrchr.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -909,17 +910,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_strrchr.c",
       "-o",
-      "objs/srcs/str/ft_strrchr.o",
-      "srcs/str/ft_strrchr.c"
+      "objs/srcs/str/ft_strrchr.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_strrchr.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_strrchr.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strrchr.o"
   },
   {
+    "file": "srcs/str/ft_strtrim.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -927,17 +928,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_strtrim.c",
       "-o",
-      "objs/srcs/str/ft_strtrim.o",
-      "srcs/str/ft_strtrim.c"
+      "objs/srcs/str/ft_strtrim.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_strtrim.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_strtrim.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_strtrim.o"
   },
   {
+    "file": "srcs/str/ft_substr.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -945,17 +946,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "srcs/str/ft_substr.c",
       "-o",
-      "objs/srcs/str/ft_substr.o",
-      "srcs/str/ft_substr.c"
+      "objs/srcs/str/ft_substr.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/srcs/str/ft_substr.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/srcs/str/ft_substr.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/srcs/str/ft_substr.o"
   },
   {
+    "file": "gnl/get_next_line_bonus.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -963,17 +964,17 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "gnl/get_next_line_bonus.c",
       "-o",
-      "objs/gnl/get_next_line_bonus.o",
-      "gnl/get_next_line_bonus.c"
+      "objs/gnl/get_next_line_bonus.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/gnl/get_next_line_bonus.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/gnl/get_next_line_bonus.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/gnl/get_next_line_bonus.o"
   },
   {
+    "file": "gnl/get_next_line_utils.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -981,1002 +982,663 @@
       "-Ift_printf/",
       "-Ignl/",
       "-c",
+      "gnl/get_next_line_utils.c",
       "-o",
-      "objs/gnl/get_next_line_utils.o",
-      "gnl/get_next_line_utils.c"
+      "objs/gnl/get_next_line_utils.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/gnl/get_next_line_utils.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/objs/gnl/get_next_line_utils.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom",
+    "output": "objs/gnl/get_next_line_utils.o"
   },
   {
+    "file": "ft_printf.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
       "-c",
+      "ft_printf.c",
       "-o",
-      "ft_printf.o",
-      "ft_printf.c"
+      "ft_printf.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_printf.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_printf.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_printf.o"
   },
   {
+    "file": "ft_putchar.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
       "-c",
+      "ft_putchar.c",
       "-o",
-      "ft_putchar.o",
-      "ft_putchar.c"
+      "ft_putchar.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_putchar.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_putchar.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_putchar.o"
   },
   {
+    "file": "ft_putnbr.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
       "-c",
+      "ft_putnbr.c",
       "-o",
-      "ft_putnbr.o",
-      "ft_putnbr.c"
+      "ft_putnbr.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_putnbr.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_putnbr.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_putnbr.o"
   },
   {
+    "file": "ft_putstr.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
       "-c",
+      "ft_putstr.c",
       "-o",
-      "ft_putstr.o",
-      "ft_putstr.c"
+      "ft_putstr.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_putstr.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_putstr.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_putstr.o"
   },
   {
+    "file": "ft_puthex_low.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
       "-c",
+      "ft_puthex_low.c",
       "-o",
-      "ft_puthex_low.o",
-      "ft_puthex_low.c"
+      "ft_puthex_low.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_puthex_low.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_puthex_low.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_puthex_low.o"
   },
   {
+    "file": "ft_puthex_upp.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
       "-c",
+      "ft_puthex_upp.c",
       "-o",
-      "ft_puthex_upp.o",
-      "ft_puthex_upp.c"
+      "ft_puthex_upp.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_puthex_upp.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_puthex_upp.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_puthex_upp.o"
   },
   {
+    "file": "ft_putptr.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
       "-c",
+      "ft_putptr.c",
       "-o",
-      "ft_putptr.o",
-      "ft_putptr.c"
+      "ft_putptr.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_putptr.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_putptr.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_putptr.o"
   },
   {
+    "file": "ft_putnbr_uns.c",
     "arguments": [
-      "/usr/bin/cc",
+      "cc",
       "-Wall",
       "-Wextra",
       "-Werror",
       "-c",
+      "ft_putnbr_uns.c",
       "-o",
-      "ft_putnbr_uns.o",
-      "ft_putnbr_uns.c"
+      "ft_putnbr_uns.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf",
-    "file": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_putnbr_uns.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/libft-custom/ft_printf/ft_putnbr_uns.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/libft-custom/ft_printf",
+    "output": "ft_putnbr_uns.o"
   },
   {
+    "file": "mlx_shaders.c",
     "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
       "-c",
       "-o",
-      "obj/mlx_init.o",
-      "mlx_init.c"
+      "mlx_shaders.o",
+      "mlx_shaders.c"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_init.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_init.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/minilibx_darwin",
+    "output": "mlx_shaders.o"
   },
   {
+    "file": "mlx_new_window.m",
     "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
       "-c",
       "-o",
-      "obj/mlx_new_window.o",
-      "mlx_new_window.c"
+      "mlx_new_window.o",
+      "mlx_new_window.m"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_new_window.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_new_window.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/minilibx_darwin",
+    "output": "mlx_new_window.o"
   },
   {
+    "file": "mlx_init_loop.m",
     "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
       "-c",
       "-o",
-      "obj/mlx_pixel_put.o",
-      "mlx_pixel_put.c"
+      "mlx_init_loop.o",
+      "mlx_init_loop.m"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_pixel_put.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_pixel_put.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/minilibx_darwin",
+    "output": "mlx_init_loop.o"
   },
   {
+    "file": "mlx_new_image.m",
     "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
       "-c",
       "-o",
-      "obj/mlx_loop.o",
-      "mlx_loop.c"
+      "mlx_new_image.o",
+      "mlx_new_image.m"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_loop.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_loop.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/minilibx_darwin",
+    "output": "mlx_new_image.o"
   },
   {
+    "file": "mlx_xpm.c",
     "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
       "-c",
       "-o",
-      "obj/mlx_mouse_hook.o",
-      "mlx_mouse_hook.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_mouse_hook.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_mouse_hook.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_key_hook.o",
-      "mlx_key_hook.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_key_hook.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_key_hook.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_expose_hook.o",
-      "mlx_expose_hook.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_expose_hook.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_expose_hook.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_loop_hook.o",
-      "mlx_loop_hook.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_loop_hook.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_loop_hook.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_int_anti_resize_win.o",
-      "mlx_int_anti_resize_win.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_int_anti_resize_win.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_int_anti_resize_win.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_int_do_nothing.o",
-      "mlx_int_do_nothing.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_int_do_nothing.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_int_do_nothing.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_int_wait_first_expose.o",
-      "mlx_int_wait_first_expose.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_int_wait_first_expose.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_int_wait_first_expose.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_int_get_visual.o",
-      "mlx_int_get_visual.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_int_get_visual.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_int_get_visual.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_flush_event.o",
-      "mlx_flush_event.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_flush_event.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_flush_event.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_string_put.o",
-      "mlx_string_put.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_string_put.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_string_put.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_set_font.o",
-      "mlx_set_font.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_set_font.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_set_font.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_new_image.o",
-      "mlx_new_image.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_new_image.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_new_image.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_get_data_addr.o",
-      "mlx_get_data_addr.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_get_data_addr.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_get_data_addr.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_put_image_to_window.o",
-      "mlx_put_image_to_window.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_put_image_to_window.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_put_image_to_window.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_get_color_value.o",
-      "mlx_get_color_value.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_get_color_value.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_get_color_value.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_clear_window.o",
-      "mlx_clear_window.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_clear_window.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_clear_window.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_xpm.o",
+      "mlx_xpm.o",
       "mlx_xpm.c"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_xpm.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_xpm.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/minilibx_darwin",
+    "output": "mlx_xpm.o"
   },
   {
+    "file": "mlx_int_str_to_wordtab.c",
     "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
       "-c",
       "-o",
-      "obj/mlx_int_str_to_wordtab.o",
+      "mlx_int_str_to_wordtab.o",
       "mlx_int_str_to_wordtab.c"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_int_str_to_wordtab.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_int_str_to_wordtab.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/minilibx_darwin",
+    "output": "mlx_int_str_to_wordtab.o"
   },
   {
+    "file": "mlx_png.c",
     "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
       "-c",
       "-o",
-      "obj/mlx_destroy_window.o",
-      "mlx_destroy_window.c"
+      "mlx_png.o",
+      "mlx_png.c"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_destroy_window.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_destroy_window.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/minilibx_darwin",
+    "output": "mlx_png.o"
   },
   {
+    "file": "mlx_mouse.m",
     "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
+      "cc",
+      "-O2",
+      "-DSTRINGPUTX11",
       "-c",
       "-o",
-      "obj/mlx_int_param_event.o",
-      "mlx_int_param_event.c"
+      "mlx_mouse.o",
+      "mlx_mouse.m"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_int_param_event.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_int_param_event.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D/minilibx_darwin",
+    "output": "mlx_mouse.o"
   },
   {
+    "file": "src/cub3d.c",
     "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_int_set_win_event_mask.o",
-      "mlx_int_set_win_event_mask.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_int_set_win_event_mask.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_int_set_win_event_mask.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_hook.o",
-      "mlx_hook.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_hook.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_hook.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_rgb.o",
-      "mlx_rgb.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_rgb.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_rgb.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_destroy_image.o",
-      "mlx_destroy_image.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_destroy_image.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_destroy_image.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_mouse.o",
-      "mlx_mouse.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_mouse.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_mouse.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_screen_size.o",
-      "mlx_screen_size.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_screen_size.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_screen_size.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O3",
-      "-I/usr/include",
-      "-c",
-      "-o",
-      "obj/mlx_destroy_display.o",
-      "mlx_destroy_display.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/mlx_destroy_display.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/obj/mlx_destroy_display.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-I/usr/include",
-      "-O3",
-      "-I..",
-      "-g",
-      "-c",
-      "-o",
-      "main.o",
-      "main.c"
-    ],
-    "directory": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/test",
-    "file": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/test/main.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/minilibx-linux/test/main.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/cub3d.c",
       "-o",
-      "obj/cub3d.o",
-      "src/cub3d.c"
+      "obj/cub3d.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/cub3d.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/cub3d.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/cub3d.o"
   },
   {
+    "file": "src/parse/validate.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/parse/validate.c",
       "-o",
-      "obj/parse/validate.o",
-      "src/parse/validate.c"
+      "obj/parse/validate.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/validate.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/validate.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/parse/validate.o"
   },
   {
+    "file": "src/parse/texture.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/parse/texture.c",
       "-o",
-      "obj/parse/texture.o",
-      "src/parse/texture.c"
+      "obj/parse/texture.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/texture.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/texture.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/parse/texture.o"
   },
   {
+    "file": "src/parse/texture_utils.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/parse/texture_utils.c",
       "-o",
-      "obj/parse/texture_utils.o",
-      "src/parse/texture_utils.c"
+      "obj/parse/texture_utils.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/texture_utils.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/texture_utils.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/parse/texture_utils.o"
   },
   {
+    "file": "src/parse/read.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/parse/read.c",
       "-o",
-      "obj/parse/read.o",
-      "src/parse/read.c"
+      "obj/parse/read.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/read.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/read.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/parse/read.o"
   },
   {
+    "file": "src/parse/parse.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/parse/parse.c",
       "-o",
-      "obj/parse/parse.o",
-      "src/parse/parse.c"
+      "obj/parse/parse.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/parse.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/parse.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/parse/parse.o"
   },
   {
+    "file": "src/parse/map.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/parse/map.c",
       "-o",
-      "obj/parse/map.o",
-      "src/parse/map.c"
+      "obj/parse/map.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/map.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/map.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/parse/map.o"
   },
   {
+    "file": "src/parse/map_utils.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/parse/map_utils.c",
       "-o",
-      "obj/parse/map_utils.o",
-      "src/parse/map_utils.c"
+      "obj/parse/map_utils.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/map_utils.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/map_utils.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/parse/map_utils.o"
   },
   {
+    "file": "src/parse/player.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/parse/player.c",
       "-o",
-      "obj/parse/player.o",
-      "src/parse/player.c"
+      "obj/parse/player.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/player.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/player.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/parse/player.o"
   },
   {
+    "file": "src/parse/player_utils.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/parse/player_utils.c",
       "-o",
-      "obj/parse/player_utils.o",
-      "src/parse/player_utils.c"
+      "obj/parse/player_utils.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/player_utils.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/player_utils.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/parse/player_utils.o"
   },
   {
+    "file": "src/cleanup/parse_errors.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/cleanup/parse_errors.c",
       "-o",
-      "obj/cleanup/parse_errors.o",
-      "src/cleanup/parse_errors.c"
+      "obj/cleanup/parse_errors.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/cleanup/parse_errors.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/cleanup/parse_errors.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/cleanup/parse_errors.o"
   },
   {
+    "file": "src/cleanup/exit_error.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/cleanup/exit_error.c",
       "-o",
-      "obj/cleanup/exit_error.o",
-      "src/cleanup/exit_error.c"
+      "obj/cleanup/exit_error.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/cleanup/exit_error.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/cleanup/exit_error.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/cleanup/exit_error.o"
   },
   {
+    "file": "src/cleanup/cleanup_parse.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/cleanup/cleanup_parse.c",
       "-o",
-      "obj/cleanup/cleanup_parse.o",
-      "src/cleanup/cleanup_parse.c"
+      "obj/cleanup/cleanup_parse.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/cleanup/cleanup_parse.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/cleanup/cleanup_parse.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/cleanup/cleanup_parse.o"
   },
   {
+    "file": "src/cleanup/cleanup_execution.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/cleanup/cleanup_execution.c",
       "-o",
-      "obj/cleanup/cleanup_execution.o",
-      "src/cleanup/cleanup_execution.c"
+      "obj/cleanup/cleanup_execution.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/cleanup/cleanup_execution.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/cleanup/cleanup_execution.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/cleanup/cleanup_execution.o"
   },
   {
+    "file": "src/cleanup/free_all.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/cleanup/free_all.c",
       "-o",
-      "obj/cleanup/free_all.o",
-      "src/cleanup/free_all.c"
+      "obj/cleanup/free_all.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/cleanup/free_all.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/cleanup/free_all.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/cleanup/free_all.o"
   },
   {
+    "file": "src/initialize/init_parse.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/initialize/init_parse.c",
       "-o",
-      "obj/initialize/init_parse.o",
-      "src/initialize/init_parse.c"
+      "obj/initialize/init_parse.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/initialize/init_parse.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/initialize/init_parse.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/initialize/init_parse.o"
   },
   {
+    "file": "src/initialize/init_exec.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/initialize/init_exec.c",
       "-o",
-      "obj/initialize/init_exec.o",
-      "src/initialize/init_exec.c"
+      "obj/initialize/init_exec.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/initialize/init_exec.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/initialize/init_exec.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/initialize/init_exec.o"
   },
   {
+    "file": "src/initialize/init.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/initialize/init.c",
       "-o",
-      "obj/initialize/init.o",
-      "src/initialize/init.c"
+      "obj/initialize/init.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/initialize/init.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/initialize/init.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/initialize/init.o"
   },
   {
+    "file": "src/debug/print.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/debug/print.c",
       "-o",
-      "obj/debug/print.o",
-      "src/debug/print.c"
+      "obj/debug/print.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/debug/print.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/debug/print.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/debug/print.o"
   },
   {
+    "file": "src/execute/execute.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/execute/execute.c",
       "-o",
-      "obj/execute/execute.o",
-      "src/execute/execute.c"
+      "obj/execute/execute.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/execute.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/execute.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/execute/execute.o"
   },
   {
+    "file": "src/execute/hooks.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/execute/hooks.c",
       "-o",
-      "obj/execute/hooks.o",
-      "src/execute/hooks.c"
+      "obj/execute/hooks.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/hooks.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/hooks.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/execute/hooks.o"
   },
   {
+    "file": "src/execute/mlx.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/execute/mlx.c",
       "-o",
-      "obj/execute/mlx.o",
-      "src/execute/mlx.c"
+      "obj/execute/mlx.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/mlx.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/mlx.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/execute/mlx.o"
   },
   {
+    "file": "src/execute/movement.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/execute/movement.c",
       "-o",
-      "obj/execute/movement.o",
-      "src/execute/movement.c"
+      "obj/execute/movement.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/movement.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/movement.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/execute/movement.o"
   },
   {
+    "file": "src/execute/render.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/execute/render.c",
       "-o",
-      "obj/execute/render.o",
-      "src/execute/render.c"
+      "obj/execute/render.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/render.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/render.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/execute/render.o"
   },
   {
+    "file": "src/execute/raycast.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/execute/raycast.c",
       "-o",
-      "obj/execute/raycast.o",
-      "src/execute/raycast.c"
+      "obj/execute/raycast.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/raycast.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/raycast.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/execute/raycast.o"
   },
   {
+    "file": "src/execute/raycast_utils.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/execute/raycast_utils.c",
       "-o",
-      "obj/execute/raycast_utils.o",
-      "src/execute/raycast_utils.c"
+      "obj/execute/raycast_utils.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/raycast_utils.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/raycast_utils.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/execute/raycast_utils.o"
   },
   {
+    "file": "src/execute/wall_texture.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/execute/wall_texture.c",
       "-o",
-      "obj/execute/wall_texture.o",
-      "src/execute/wall_texture.c"
+      "obj/execute/wall_texture.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/wall_texture.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/wall_texture.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/execute/wall_texture.o"
   },
   {
+    "file": "src/execute/wall_render.c",
     "arguments": [
-      "/usr/bin/cc",
-      "-Iminilibx-linux",
+      "cc",
+      "-Iminilibx_darwin",
       "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
+      "src/execute/wall_render.c",
       "-o",
-      "obj/execute/wall_render.o",
-      "src/execute/wall_render.c"
+      "obj/execute/wall_render.o"
     ],
-    "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/wall_render.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/wall_render.o"
+    "directory": "/Users/carljosiah/vm-ubuntu/42-Cursus/cub3D",
+    "output": "obj/execute/wall_render.o"
   }
 ]

@@ -21,10 +21,39 @@
 # include <structs.h>
 # include <sys/time.h>
 
-void	open_window(t_data *data);
-void	event_handlers(t_data *data);
+/**
+ * @brief Calls all functions related to raycasting and rendering.
+ *
+ * @param data Game data structure containing all.
+ */
 void	launch_game(t_data *data);
+
+/**
+ * @brief Initialize the mlx and create the window.
+ *
+ * @param data Update the data's mlx struct.
+ */
+void	open_window(t_data *data);
+
+/**
+ * @brief Handle keystrokes and window events.
+ *
+ * @param data Call on data's mlx to set hooks.
+ */
+void	event_handlers(t_data *data);
+
+/**
+ * @brief Create the buffer for the pixels to be drawn.
+ *
+ * @param data Call on data's mlx to contain the image and the address for it.
+ */
 void	create_image(t_data *data);
+
+/**
+ * @brief Convert xpm files and load the pixels into the memory.
+ *
+ * @param data Call on data's mlx to contain the textures.
+ */
 void	load_textures(t_data *data);
 
 /**
@@ -92,13 +121,24 @@ void	cast_ray(t_data *data, int x, t_ray *ray);
 void	render(t_data *data);
 
 /**
- * @brief Ray hits wall and then wall face decides texture
+ * @brief Select wall texture based on ray hit side and direction.
  *
- * @param data Gather textures from data struct
- * @param ray Use ray struct to get side and dir info
+ * @param data Game data containing textures
+ * @param ray Ray hit information.
+ *
+ * @return t_img *Pointer to the selected texture.
  */
 t_img	*get_wall_texture(t_data *data, t_ray *ray);
 
+/**
+ * @brief identify
+ *
+ * @param tex
+ * @param x
+ * @param y
+ *
+ * @return int
+ */
 int		get_texture_color(t_img *tex, int x, int y);
 
 #endif
