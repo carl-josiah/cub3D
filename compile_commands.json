@@ -1563,300 +1563,420 @@
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/cub3d.o",
-      "srcs/cub3d.c"
+      "obj/cub3d.o",
+      "src/cub3d.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/cub3d.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/cub3d.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/cub3d.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/cub3d.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/parse/validate.o",
-      "srcs/parse/validate.c"
+      "obj/parse/validate.o",
+      "src/parse/validate.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/parse/validate.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/parse/validate.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/validate.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/validate.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/parse/texture.o",
-      "srcs/parse/texture.c"
+      "obj/parse/texture.o",
+      "src/parse/texture.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/parse/texture.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/parse/texture.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/texture.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/texture.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/parse/texture_utils.o",
-      "srcs/parse/texture_utils.c"
+      "obj/parse/texture_utils.o",
+      "src/parse/texture_utils.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/parse/texture_utils.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/parse/texture_utils.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/texture_utils.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/texture_utils.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/parse/read.o",
-      "srcs/parse/read.c"
+      "obj/parse/read.o",
+      "src/parse/read.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/parse/read.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/parse/read.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/read.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/read.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/parse/parse.o",
-      "srcs/parse/parse.c"
+      "obj/parse/parse.o",
+      "src/parse/parse.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/parse/parse.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/parse/parse.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/parse.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/parse.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/parse/map.o",
-      "srcs/parse/map.c"
+      "obj/parse/map.o",
+      "src/parse/map.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/parse/map.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/parse/map.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/map.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/map.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/parse/map_utils.o",
-      "srcs/parse/map_utils.c"
+      "obj/parse/map_utils.o",
+      "src/parse/map_utils.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/parse/map_utils.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/parse/map_utils.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/map_utils.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/map_utils.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/cleanup/parse_errors.o",
-      "srcs/cleanup/parse_errors.c"
+      "obj/parse/player.o",
+      "src/parse/player.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/cleanup/parse_errors.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/cleanup/parse_errors.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/player.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/player.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/cleanup/exit_error.o",
-      "srcs/cleanup/exit_error.c"
+      "obj/parse/player_utils.o",
+      "src/parse/player_utils.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/cleanup/exit_error.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/cleanup/exit_error.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/parse/player_utils.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/parse/player_utils.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/cleanup/free.o",
-      "srcs/cleanup/free.c"
+      "obj/cleanup/parse_errors.o",
+      "src/cleanup/parse_errors.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/cleanup/free.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/cleanup/free.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/cleanup/parse_errors.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/cleanup/parse_errors.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/initialize/init_parse.o",
-      "srcs/initialize/init_parse.c"
+      "obj/cleanup/exit_error.o",
+      "src/cleanup/exit_error.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/initialize/init_parse.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/initialize/init_parse.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/cleanup/exit_error.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/cleanup/exit_error.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/initialize/init_exec.o",
-      "srcs/initialize/init_exec.c"
+      "obj/cleanup/cleanup_parse.o",
+      "src/cleanup/cleanup_parse.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/initialize/init_exec.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/initialize/init_exec.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/cleanup/cleanup_parse.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/cleanup/cleanup_parse.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/initialize/init.o",
-      "srcs/initialize/init.c"
+      "obj/cleanup/cleanup_execution.o",
+      "src/cleanup/cleanup_execution.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/initialize/init.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/initialize/init.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/cleanup/cleanup_execution.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/cleanup/cleanup_execution.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/debug/print.o",
-      "srcs/debug/print.c"
+      "obj/cleanup/free_all.o",
+      "src/cleanup/free_all.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/debug/print.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/debug/print.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/cleanup/free_all.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/cleanup/free_all.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/execute/execute.o",
-      "srcs/execute/execute.c"
+      "obj/initialize/init_parse.o",
+      "src/initialize/init_parse.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/execute/execute.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/execute/execute.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/initialize/init_parse.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/initialize/init_parse.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/execute/hooks.o",
-      "srcs/execute/hooks.c"
+      "obj/initialize/init_exec.o",
+      "src/initialize/init_exec.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/execute/hooks.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/execute/hooks.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/initialize/init_exec.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/initialize/init_exec.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/execute/mlx.o",
-      "srcs/execute/mlx.c"
+      "obj/initialize/init.o",
+      "src/initialize/init.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/execute/mlx.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/execute/mlx.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/initialize/init.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/initialize/init.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/execute/movement.o",
-      "srcs/execute/movement.c"
+      "obj/debug/print.o",
+      "src/debug/print.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/execute/movement.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/execute/movement.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/debug/print.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/debug/print.o"
   },
   {
     "arguments": [
       "/usr/bin/cc",
       "-Iminilibx-linux",
-      "-Iincs",
+      "-Iincludes",
       "-Ilibft-custom/incs",
       "-c",
       "-o",
-      "objs/execute/render.o",
-      "srcs/execute/render.c"
+      "obj/execute/execute.o",
+      "src/execute/execute.c"
     ],
     "directory": "/home/ccastro/42-Cursus/cub3D",
-    "file": "/home/ccastro/42-Cursus/cub3D/srcs/execute/render.c",
-    "output": "/home/ccastro/42-Cursus/cub3D/objs/execute/render.o"
+    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/execute.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/execute.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iminilibx-linux",
+      "-Iincludes",
+      "-Ilibft-custom/incs",
+      "-c",
+      "-o",
+      "obj/execute/hooks.o",
+      "src/execute/hooks.c"
+    ],
+    "directory": "/home/ccastro/42-Cursus/cub3D",
+    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/hooks.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/hooks.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iminilibx-linux",
+      "-Iincludes",
+      "-Ilibft-custom/incs",
+      "-c",
+      "-o",
+      "obj/execute/mlx.o",
+      "src/execute/mlx.c"
+    ],
+    "directory": "/home/ccastro/42-Cursus/cub3D",
+    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/mlx.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/mlx.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iminilibx-linux",
+      "-Iincludes",
+      "-Ilibft-custom/incs",
+      "-c",
+      "-o",
+      "obj/execute/movement.o",
+      "src/execute/movement.c"
+    ],
+    "directory": "/home/ccastro/42-Cursus/cub3D",
+    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/movement.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/movement.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iminilibx-linux",
+      "-Iincludes",
+      "-Ilibft-custom/incs",
+      "-c",
+      "-o",
+      "obj/execute/render.o",
+      "src/execute/render.c"
+    ],
+    "directory": "/home/ccastro/42-Cursus/cub3D",
+    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/render.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/render.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iminilibx-linux",
+      "-Iincludes",
+      "-Ilibft-custom/incs",
+      "-c",
+      "-o",
+      "obj/execute/raycast.o",
+      "src/execute/raycast.c"
+    ],
+    "directory": "/home/ccastro/42-Cursus/cub3D",
+    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/raycast.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/raycast.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iminilibx-linux",
+      "-Iincludes",
+      "-Ilibft-custom/incs",
+      "-c",
+      "-o",
+      "obj/execute/raycast_utils.o",
+      "src/execute/raycast_utils.c"
+    ],
+    "directory": "/home/ccastro/42-Cursus/cub3D",
+    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/raycast_utils.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/raycast_utils.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iminilibx-linux",
+      "-Iincludes",
+      "-Ilibft-custom/incs",
+      "-c",
+      "-o",
+      "obj/execute/wall_texture.o",
+      "src/execute/wall_texture.c"
+    ],
+    "directory": "/home/ccastro/42-Cursus/cub3D",
+    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/wall_texture.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/wall_texture.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iminilibx-linux",
+      "-Iincludes",
+      "-Ilibft-custom/incs",
+      "-c",
+      "-o",
+      "obj/execute/wall_render.o",
+      "src/execute/wall_render.c"
+    ],
+    "directory": "/home/ccastro/42-Cursus/cub3D",
+    "file": "/home/ccastro/42-Cursus/cub3D/src/execute/wall_render.c",
+    "output": "/home/ccastro/42-Cursus/cub3D/obj/execute/wall_render.o"
   }
 ]

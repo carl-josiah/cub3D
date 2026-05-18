@@ -13,12 +13,13 @@
 #ifndef DEBUG_H
 # define DEBUG_H
 
+# include "libft.h"
+# include "structs.h"
 # include <fcntl.h>
-# include <libft.h>
-# include <structs.h>
 
 int		print_for_me(const char *path);
 void	print_grid(char **grid, int height);
 void	print_texture_paths(t_data *data);
+void	print_center_ray(t_ray *ray);
 
 #endif

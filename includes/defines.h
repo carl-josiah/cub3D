@@ -55,8 +55,8 @@
 # define MAP_INVALID_CHARS "Invalid Characters Inside Map"
 # define MAP_NOT_CLOSED "Map Is Not Closed"
 
-# define WIN_WIDTH 400
-# define WIN_HEIGHT 400
+# define WIN_WIDTH 800
+# define WIN_HEIGHT 800
 # define ERROR_MLX_INIT "MLX initialization failed"
 # define ERROR_MLX_WIN "MLX window failed"
 # define ERROR_MLX_SCREEN_IMG "MLX screen image failed"

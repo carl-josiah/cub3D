@@ -13,22 +13,20 @@
 #ifndef CUB3D_H
 # define CUB3D_H
 
+# include "cleanup.h"
+# include "debug.h"
+# include "defines.h"
+# include "execute.h"
+# include "initialize.h"
+# include "libft.h"
+# include "parse.h"
+# include "structs.h"
 # include <fcntl.h>
-# include <unistd.h>
+# include <mlx.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <sys/time.h>
-# include <math.h>
-# include <mlx.h>
-
-# include <debug.h>
-# include <libft.h>
-# include <parse.h>
-# include <cleanup.h>
-# include <initialize.h>
-# include <structs.h>
-# include <defines.h>
-# include <execute.h>
+# include <unistd.h>
 
 #endif

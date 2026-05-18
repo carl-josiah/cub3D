@@ -53,3 +53,12 @@ void	print_texture_paths(t_data *data)
 	printf("tex[2]: %s\n", data->tex.we);
 	printf("tex[3]: %s\n", data->tex.ea);
 }
+
+void	print_center_ray(t_ray *ray)
+{
+	printf("grid.x: %d\n", ray->grid.x);
+	printf("grid.y: %d\n", ray->grid.y);
+	printf("dist.side_x: %f\n", ray->dist.side_x);
+	printf("dist.side_y: %f\n", ray->dist.side_y);
+	printf("side: %d\n", ray->side);
+}

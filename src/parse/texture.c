@@ -94,12 +94,12 @@ void	parse_direction(int id, char *line, t_data *data)
 
 void	parse_color(int id, char *line, t_tex *tex)
 {
-	int		rgb[3];
+	int	rgb[3];
 
 	extract_color(line, rgb);
 	if (id == TEX_F)
-		tex->f = (rgb[0] << 16) | (rgb[1] << 8) | rgb[2];
+		tex->floor_color = (rgb[0] << 16) | (rgb[1] << 8) | rgb[2];
 	else if (id == TEX_C)
-		tex->c = (rgb[0] << 16) | (rgb[1] << 8) | rgb[2];
+		tex->ceiling_color = (rgb[0] << 16) | (rgb[1] << 8) | rgb[2];
 	tex->mask |= id;
 }

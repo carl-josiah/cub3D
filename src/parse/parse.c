@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 12:03:27 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/24 13:14:24 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/15 12:43:43 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,12 +63,33 @@ static void	handle_line(char *line, t_data *data, t_state *state)
 
 static int	allocate_grid(char **lines, t_data *data)
 {
+	int	i;
+	int	len;
+
 	data->map.height = count_map_height(lines);
-	data->map.grid = ft_calloc(sizeof(char *), (data->map.height + 1));
+	i = 0;
+	data->map.width = 0;
+	while (lines[i])
+	{
+		len = ft_strlen(lines[i]);
+		if (len > data->map.width)
+			data->map.width = len;
+		i++;
+	}
+	data->map.grid = ft_calloc(sizeof(char *), data->map.height + 1);
 	if (!data->map.grid)
 		exit_error(data, MALLOC, NULL, NL);
 	return (1);
 }
+
+// static int	allocate_grid(char **lines, t_data *data)
+// {
+// 	data->map.height = count_map_height(lines);
+// 	data->map.grid = ft_calloc(sizeof(char *), (data->map.height + 1));
+// 	if (!data->map.grid)
+// 		exit_error(data, MALLOC, NULL, NL);
+// 	return (1);
+// }
 
 void	parse_file(char **lines, t_data *data)
 {

@@ -13,10 +13,10 @@
 #ifndef CLEANUP_H
 # define CLEANUP_H
 
-# include <defines.h>
-# include <libft.h>
+# include "defines.h"
+# include "libft.h"
+# include "structs.h"
 # include <mlx.h>
-# include <structs.h>
 
 void	exit_error(t_data *data, char *msg, char *line, int nl);
 void	free_double_ptr(char **ptr);

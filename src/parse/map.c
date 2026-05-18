@@ -6,37 +6,11 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 11:53:10 by ccastro           #+#    #+#             */
-/*   Updated: 2026/03/24 13:14:56 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/15 14:46:58 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <parse.h>
-
-static void	find_player(t_data *data)
-{
-	int	x;
-	int	y;
-
-	y = 0;
-	while (y < data->map.height)
-	{
-		x = 0;
-		while (data->map.grid[y][x])
-		{
-			if (data->map.grid[y][x] == 'N'
-				|| data->map.grid[y][x] == 'S'
-				|| data->map.grid[y][x] == 'E'
-				|| data->map.grid[y][x] == 'W')
-			{
-				data->player.x = x;
-				data->player.y = y;
-				return ;
-			}
-			x++;
-		}
-		y++;
-	}
-}
 
 static int	flood_fill(char **grid, int x, int y, int height)
 {

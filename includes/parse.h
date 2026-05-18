@@ -6,24 +6,24 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 10:25:39 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/12 15:46:59 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/15 15:06:23 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PARSE_H
 # define PARSE_H
 
-# include <cleanup.h>
-# include <debug.h>
-# include <defines.h>
-# include <errno.h>
+# include "cleanup.h"
+# include "debug.h"
+# include "defines.h"
+# include "errno.h"
+# include "initialize.h"
+# include "libft.h"
+# include "structs.h"
 # include <fcntl.h>
-# include <initialize.h>
-# include <libft.h>
 # include <stddef.h>
 # include <stdio.h>
 # include <string.h>
-# include <structs.h>
 # include <unistd.h>
 
 void			args_validation(int ac, char **av);
@@ -42,5 +42,10 @@ void			validate_map(char **grid, t_data *data);
 int				count_directions(char **grid, int height);
 int				count_map_height(char **line);
 char			**copy_grid(char **grid, int height);
+void			find_player(t_data *data);
+void			set_spawn_north(t_data *data);
+void			set_spawn_south(t_data *data);
+void			set_spawn_east(t_data *data);
+void			set_spawn_west(t_data *data);
 
 #endif

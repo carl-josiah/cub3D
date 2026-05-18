@@ -6,19 +6,19 @@
 #    By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/23 14:26:02 by ccastro           #+#    #+#              #
-#    Updated: 2026/05/15 10:45:05 by ccastro          ###   ########.fr        #
+#    Updated: 2026/05/15 18:53:33 by ccastro          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME					:= cub3D
 CC						:= cc
-CFLAGS					:= -Wall -Wextra -Werror
+CFLAGS					:= # -Wall -Wextra -Werror
 
 LIBFT_DIR				:= libft-custom
 LIBFT					:= $(LIBFT_DIR)/libft.a
 
-SRCS_DIR				:= srcs
-OBJS_DIR				:= objs
+SRCS_DIR				:= src
+OBJS_DIR				:= obj
 
 PARSE_DIR				:= parse
 EXECUTE_DIR				:= execute
@@ -38,11 +38,11 @@ else
     MLX_FLAGS			:= -L$(MLX_DIR) -lmlx_Linux -lX11 -lXext -lm
 endif
 
-CFLAGS					+= -I$(MLX_DIR) -Iincs -I$(LIBFT_DIR)/incs
+CFLAGS					+= -I$(MLX_DIR) -Iincludes -I$(LIBFT_DIR)/incs
 
 MAIN					:= cub3d.c
-PARSE_SRCS				:= validate.c texture.c texture_utils.c read.c parse.c map.c map_utils.c
-EXECUTE_SRCS			:= execute.c hooks.c mlx.c movement.c render.c raycast.c raycast_utils.c
+PARSE_SRCS				:= validate.c texture.c texture_utils.c read.c parse.c map.c map_utils.c player.c player_utils.c
+EXECUTE_SRCS			:= execute.c hooks.c mlx.c movement.c render.c raycast.c raycast_utils.c wall_texture.c wall_render.c
 CLEANUP_SRCS			:= parse_errors.c exit_error.c cleanup_parse.c cleanup_execution.c free_all.c
 INITIALIZE_SRCS			:= init_parse.c init_exec.c init.c
 DEBUG_SRCS				:= print.c

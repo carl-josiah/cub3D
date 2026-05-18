@@ -6,14 +6,14 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:44:10 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/14 15:28:54 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/15 17:38:26 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef STRUCTS_H
 # define STRUCTS_H
 
-# include <enums.h>
+# include "enums.h"
 # include <stdlib.h>
 
 typedef struct s_tex
@@ -22,8 +22,8 @@ typedef struct s_tex
 	char		*so;
 	char		*ea;
 	char		*we;
-	int			f;
-	int			c;
+	int			floor_color;
+	int			ceiling_color;
 	t_tex_mask	mask;
 }				t_tex;
 
@@ -35,39 +35,24 @@ typedef struct s_map
 	int			width;
 }				t_map;
 
+typedef struct s_vec2d
+{
+	double		x;
+	double		y;
+}				t_vec2d;
+
+typedef struct s_vec2i
+{
+	int			x;
+	int			y;
+}				t_vec2i;
+
 typedef struct s_player
 {
-	double		x;
-	double		y;
-	double		dir_x;
-	double		dir_y;
-	double		plane_x;
-	double		plane_y;
+	t_vec2d		pos;
+	t_vec2d		dir;
+	t_vec2d		plane;
 }				t_player;
-
-typedef struct s_pos
-{
-	double		x;
-	double		y;
-}				t_pos;
-
-typedef struct s_dir
-{
-	double		x;
-	double		y;
-}				t_dir;
-
-typedef struct s_grid
-{
-	int			x;
-	int			y;
-}				t_grid;
-
-typedef struct s_step
-{
-	int			x;
-	int			y;
-}				t_step;
 
 typedef struct s_dist
 {
@@ -79,10 +64,10 @@ typedef struct s_dist
 
 typedef struct s_ray
 {
-	t_pos		pos;
-	t_dir		dir;
-	t_grid		grid;
-	t_step		step;
+	t_vec2d		pos;
+	t_vec2d		dir;
+	t_vec2i		grid;
+	t_vec2i		step;
 	t_dist		dist;
 	int			hit;
 	int			side;

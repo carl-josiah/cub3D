@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/14 12:08:30 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/15 00:22:29 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/15 17:47:58 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	init_ray(t_data *data, t_ray *ray)
 {
-	ray->pos.x = data->player.x;
-	ray->pos.y = data->player.y;
-	ray->dir.x = data->player.dir_x;
-	ray->dir.y = data->player.dir_y;
+	ray->pos.x = data->player.pos.x;
+	ray->pos.y = data->player.pos.y;
+	ray->dir.x = data->player.dir.x;
+	ray->dir.y = data->player.dir.y;
 	ray->grid.x = (int)ray->pos.x;
 	ray->grid.y = (int)ray->pos.y;
 }

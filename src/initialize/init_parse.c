@@ -18,8 +18,8 @@ void	init_tex(t_tex *tex)
 	tex->so = NULL;
 	tex->ea = NULL;
 	tex->we = NULL;
-	tex->f = -1;
-	tex->c = -1;
+	tex->floor_color = -1;
+	tex->ceiling_color = -1;
 	tex->mask = 0;
 }
 
@@ -33,12 +33,12 @@ void	init_map(t_map *map)
 
 void	init_player(t_player *player)
 {
-	player->x = 0.0;
-	player->y = 0.0;
-	player->dir_x = 0.0;
-	player->dir_y = 0.0;
-	player->plane_x = 0.0;
-	player->plane_y = 0.0;
+	player->pos.x = 0.0;
+	player->pos.y = 0.0;
+	player->dir.x = 0.0;
+	player->dir.y = 0.0;
+	player->plane.x = 0.0;
+	player->plane.y = 0.0;
 }
 
 void	init_file(t_file *file)
