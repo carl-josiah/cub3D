@@ -82,15 +82,6 @@ static int	allocate_grid(char **lines, t_data *data)
 	return (1);
 }
 
-// static int	allocate_grid(char **lines, t_data *data)
-// {
-// 	data->map.height = count_map_height(lines);
-// 	data->map.grid = ft_calloc(sizeof(char *), (data->map.height + 1));
-// 	if (!data->map.grid)
-// 		exit_error(data, MALLOC, NULL, NL);
-// 	return (1);
-// }
-
 void	parse_file(char **lines, t_data *data)
 {
 	t_state	state;
