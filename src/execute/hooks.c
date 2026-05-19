@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 19:35:31 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/12 16:28:17 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/19 13:09:55 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
  * @brief Free and destroy everything and terminate the program.
  *
  * @param data Contains all the structs to free.
- * @return void haha
  */
 static void	close_game(t_data *data)
 {
@@ -30,7 +29,7 @@ static void	close_game(t_data *data)
  * @param keycode The code of the key pressed.
  * @param data The struct to pass to the function called.
  *
- * @return int Returns a number due to mlx_key_hook() implementation
+ * @return int Returns a number due to mlx_key_hook() implementation.
  */
 static int	on_key_press(int keycode, t_data *data)
 {
@@ -42,8 +41,8 @@ static int	on_key_press(int keycode, t_data *data)
 /**
  * @brief Callback function that identify the window close event.
  *
- * @param data Pass data struct
- * @return int Returns a number due to mlx_hook() implementation
+ * @param data Pass data struct.
+ * @return int Returns a number due to mlx_hook() implementation.
  */
 static int	on_window_close(t_data *data)
 {
