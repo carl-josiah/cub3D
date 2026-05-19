@@ -4,7 +4,7 @@ WE ./textures/minecraft3.xpm
 EA ./textures/minecraft4.xpm
 
 F               0,255,255
-C                          255,255,255
+C                          255,0,255
 
 
 111111111111111111111111
