@@ -36,7 +36,6 @@ void			skip_white_spaces(char **line, int skip);
 void			throw_id_error(int id, t_tex *tex);
 void			forbid_garbage(char *ptr, char *line);
 void			store_map_line(char *map_line, t_data *data);
-int				count_map_height(char **line);
 int				parse_rgb_channel(char *ptr, int *rgb, int i);
 void			validate_map(char **grid, t_data *data);
 int				count_directions(char **grid, int height);
