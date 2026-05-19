@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:46:29 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/12 16:11:58 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/19 13:33:30 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,11 @@
 # define ERROR_MLX_TEXTURE "MLX load texture failed"
 # define CUB3D "cub3D"
 
+# define TEX_COUNT 4
+
+# define MOVE_SPEED 0.02
+# define ROT_SPEED 0.03
+
 // keycodes
 # ifdef __linux__
 #  include <X11/keysym.h>
@@ -72,6 +77,17 @@
 # else
 #  define ESC_KEY 53
 # endif
+
+# define W_KEY 119
+# define A_KEY 97
+# define S_KEY 115
+# define D_KEY 100
+# define LEFT_KEY 65361
+# define RIGHT_KEY 65363
+
+# define KEY_COUNT 7
 # define DESTROY_NOTIFY 17
+# define KEY_PRESS 2
+# define KEY_RELEASE 3
 
 #endif

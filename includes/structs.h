@@ -6,13 +6,14 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:44:10 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/15 17:38:26 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/19 17:30:28 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef STRUCTS_H
 # define STRUCTS_H
 
+# include "defines.h"
 # include "enums.h"
 # include <stdlib.h>
 
@@ -99,6 +100,11 @@ typedef struct s_mlx
 	t_img		screen;
 }				t_mlx;
 
+typedef struct s_input
+{
+	int			keys[KEY_COUNT];
+}				t_input;
+
 typedef struct s_data
 {
 	t_tex		tex;
@@ -107,6 +113,21 @@ typedef struct s_data
 	t_file		file;
 	t_mlx		mlx;
 	t_img		textures[TEX_COUNT];
+	t_input		input;
 }				t_data;
+
+typedef struct s_wall_tex
+{
+	t_img		*tex;
+	int			tex_x;
+}				t_wall_tex;
+
+typedef struct s_wall_draw
+{
+	t_vec2i		raw_bounds;
+	t_vec2i		bounds;
+	int			line_height;
+	t_wall_tex	tex;
+}				t_wall_draw;
 
 #endif

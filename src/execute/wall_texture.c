@@ -17,12 +17,12 @@ t_img	*get_wall_texture(t_data *data, t_ray *ray)
 	if (ray->side == 0)
 	{
 		if (ray->dir.x > 0)
-			return (&data->textures[2]);
-		return (&data->textures[3]);
+			return (&data->textures[3]);
+		return (&data->textures[2]);
 	}
 	if (ray->dir.y > 0)
-		return (&data->textures[0]);
-	return (&data->textures[1]);
+		return (&data->textures[1]);
+	return (&data->textures[0]);
 }
 
 int	get_texture_color(t_img *tex, int x, int y)

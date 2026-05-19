@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:20:02 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/19 13:13:25 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/19 13:22:27 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,15 @@ typedef enum e_tex_status
 	TEX_MAP = 4,
 	TEX_SPACES = 5
 }	t_tex_status;
+
+typedef enum e_movement
+{
+	KEY_W = 1,
+	KEY_A = 2,
+	KEY_S = 3,
+	KEY_D = 4,
+	KEY_LEFT = 5,
+	KEY_RIGHT = 6
+}	t_movement;
 
 #endif

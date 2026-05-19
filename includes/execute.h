@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/24 12:04:36 by ccastro           #+#    #+#             */
-/*   Updated: 2026/05/15 18:51:55 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/05/19 17:46:52 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,5 +140,50 @@ t_img	*get_wall_texture(t_data *data, t_ray *ray);
  * @return int
  */
 int		get_texture_color(t_img *tex, int x, int y);
+
+t_vec2i	get_draw_bounds(int line_height);
+
+t_vec2i	get_clamped_bounds(t_vec2i raw_bounds);
+
+double	get_wall_x(t_ray *ray);
+
+int		get_tex_x(t_ray *ray, t_img *tex);
+
+int		get_tex_y(int y, int draw_start, int line_height, t_img *tex);
+
+void	draw_textured_line(t_data *data, t_ray *ray, int x, t_wall_draw *wall);
+
+void	initialize_input_keys(t_data *data);
+
+void	move_player(t_data *data);
+
+/**
+ * @brief Callback function that changes the state of the game
+ * or exits the game.
+ *
+ * @param keycode The code of the key pressed.
+ * @param data The struct to pass to the function called.
+ *
+ * @return int Returns a number due to mlx_key_hook() implementation.
+ */
+int		on_key_press(int keycode, t_data *data);
+
+/**
+ * @brief Callback function that changes the state of the game on key release.
+ *
+ * @param keycode The code of the key pressed.
+ * @param data The struct to pass to the function called.
+ *
+ * @return int Returns a number due to mlx_key_hook() implementation.
+ */
+int		on_key_release(int keycode, t_data *data);
+
+/**
+ * @brief Callback function that identify the window close event.
+ *
+ * @param data Pass data struct.
+ * @return int Returns a number due to mlx_hook() implementation.
+ */
+int		on_window_close(t_data *data);
 
 #endif
