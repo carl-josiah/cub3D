@@ -58,12 +58,9 @@ static int	path_validation(char *texture)
 	if (fd < 0)
 		return (0);
 	r = read(fd, &buf, 1);
-	if (r < 0 && errno == EISDIR)
-	{
-		close(fd);
-		return (0);
-	}
 	close(fd);
+	if (r != 1)
+		return (0);
 	return (1);
 }
 
