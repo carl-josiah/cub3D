@@ -19,11 +19,9 @@ int	main(int ac, char **av)
 
 	args_validation(ac, av);
 	init_data(&data);
-	data.file.lines = read_cub_file(av[1], &line_count);
-	if (!data.file.lines)
-		exit_error(&data, MALLOC, NULL, NL);
-	parse_file(data.file.lines, &data);
-	launch_game(&data);
-	free_all(data.file.lines, &data);
+	data.file.lines = read_cub_file(&data, av[1], &line_count);
+	// parse_file(data.file.lines, &data);
+	// launch_game(&data);
+	// free_all(data.file.lines, &data);
 	return (EXIT_SUCCESS);
 }

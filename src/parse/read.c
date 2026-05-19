@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parse.h"
+#include <parse.h>
 
 static size_t	count_lines(int fd)
 {
@@ -58,20 +58,26 @@ static char	**get_lines(int fd, size_t line_count)
 	return (lines);
 }
 
-char	**read_cub_file(const char *cub_file, size_t *lc)
+static int	check_cube_file(t_data *data, const char *cub_file)
+{
+	int	fd;
+
+	fd = open(cub_file, O_RDONLY);
+	if (fd == -1)
+		exit_error(data, INVALID_FILE, NULL, NL);
+	return (fd);
+}
+
+char	**read_cub_file(t_data *data, const char *cub_file, size_t *lc)
 {
 	int		fd;
 	char	**lines;
 	char	*tmp;
 
-	fd = open(cub_file, O_RDONLY);
-	if (fd == -1)
-		return (NULL);
+	fd = check_cube_file(data, cub_file);
 	*lc = count_lines(fd);
 	close(fd);
-	fd = open(cub_file, O_RDONLY);
-	if (fd == -1)
-		return (NULL);
+	fd = check_cube_file(data, cub_file);
 	lines = get_lines(fd, *lc);
 	tmp = get_next_line(fd);
 	while (tmp)

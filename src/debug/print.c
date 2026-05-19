@@ -62,3 +62,12 @@ void	print_center_ray(t_ray *ray)
 	printf("dist.side_y: %f\n", ray->dist.side_y);
 	printf("side: %d\n", ray->side);
 }
+
+void	print_file_lines(char **lines)
+{
+	while (*lines)
+	{
+		printf("%s\n", *lines);
+		lines++;
+	}
+}

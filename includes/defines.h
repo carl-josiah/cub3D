@@ -27,6 +27,7 @@
 # define MALLOC "Malloc Failure"
 
 # define EMPTY_FILE "Empty File"
+# define INVALID_FILE "Invalid .cub file"
 
 # define MAP_CHARS "01NSEW \t\n\v\f\r"
 # define MAP_DIRECTIONS "NSEW"

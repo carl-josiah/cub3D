@@ -30,7 +30,7 @@ void			args_validation(int ac, char **av);
 void			parse_direction(int id, char *line, t_data *data);
 void			parse_color(int id, char *line, t_tex *tex);
 t_tex_status	is_texture(int *id, char *line, t_tex *tex);
-char			**read_cub_file(const char *cub_file, size_t *lc);
+char			**read_cub_file(t_data *data, const char *cub_file, size_t *lc);
 void			parse_file(char **lines, t_data *data);
 void			skip_white_spaces(char **line, int skip);
 void			throw_id_error(int id, t_tex *tex);
